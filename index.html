@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Needle Treasures Nook | Cross-Stitch Patterns Inspired by Nature</title>
+    <meta name="description" content="Cross-stitch patterns inspired by nature. Modern primitive designs handstitched on tea-dyed linen. Free DMC thread checker tool included.">
+    <meta name="keywords" content="cross stitch patterns, primitive cross stitch, nature inspired embroidery, DMC thread, needlework patterns, slow stitching, hand dyed linen">
+    <meta name="author" content="Marieta - Needle Treasures Nook">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://needletreasuresnook.com/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://needletreasuresnook.com/">
+    <meta property="og:title" content="Needle Treasures Nook | Primitive Cross-Stitch Patterns">
+    <meta property="og:description" content="Handcrafted primitive cross-stitch patterns for slow stitchers and book lovers.">
+    <meta property="og:image" content="https://needletreasuresnook.com/images/og-image.jpg">
+    <meta property="og:site_name" content="Needle Treasures Nook">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Needle Treasures Nook | Primitive Cross-Stitch Patterns">
+    <meta name="twitter:description" content="Handcrafted primitive cross-stitch patterns for slow stitchers.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-96x96.png">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --terracotta: #C67B5C;
+            --terracotta-dark: #A85D40;
+            --cream: #F5F0E8;
+            --cream-dark: #EDE6DA;
+            --sage: #8B9D83;
+            --sage-dark: #6F8066;
+            --brown: #6B5345;
+            --brown-light: #8A7164;
+            --white: #FDFCFA;
+            --text-dark: #3D3028;
+            --text-medium: #5C4D42;
+            --text-light: #7A6B5E;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: 0.75rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .header.scrolled {
+            padding: 0.5rem 2rem;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: height 0.3s;
+        }
+
+        .header.scrolled .logo img {
+            height: 40px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav a:hover {
+            color: var(--terracotta);
+        }
+
+        .nav-cta {
+            background: var(--terracotta);
+            color: white !important;
+            padding: 0.5rem 1.25rem;
+            border-radius: 25px;
+            font-weight: 600 !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--terracotta-dark);
+            color: white !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--white) 0%, var(--cream) 100%);
+            padding: 4rem 2rem 5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '✕ ✕ ✕ ✕ ✕ ✕ ✕ ✕ ✕ ✕';
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            right: 0;
+            font-size: 1rem;
+            letter-spacing: 2rem;
+            color: var(--cream-dark);
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Lato', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 300;
+            color: var(--brown);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--text-medium);
+            margin-bottom: 2rem;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 2rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--terracotta);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--terracotta-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(198, 123, 92, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--brown);
+            border: 2px solid var(--brown);
+        }
+
+        .btn-secondary:hover {
+            background: var(--brown);
+            color: white;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--brown);
+            padding: 1.5rem 2rem;
+        }
+
+        .stats-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Featured Patterns */
+        .patterns-section {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: var(--brown);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .patterns-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .pattern-card {
+            background: var(--cream);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .pattern-image {
+            aspect-ratio: 1;
+            overflow: hidden;
+        }
+
+        .pattern-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .pattern-card:hover .pattern-image img {
+            transform: scale(1.05);
+        }
+
+        .pattern-info {
+            padding: 1.25rem;
+        }
+
+        .pattern-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--brown);
+            margin-bottom: 0.25rem;
+        }
+
+        .pattern-desc {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .view-all-link {
+            display: block;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .view-all-link a {
+            color: var(--terracotta);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .view-all-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 5rem 2rem;
+            background: var(--cream);
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 250px;
+            border-radius: 50%;
+            border: 5px solid var(--white);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .about-text h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: var(--brown);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            color: var(--text-medium);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .about-text p:last-of-type {
+            font-style: italic;
+            color: var(--terracotta);
+        }
+
+        /* Free Tool Section */
+        .tool-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--sage) 0%, var(--sage-dark) 100%);
+            text-align: center;
+            color: white;
+        }
+
+        .tool-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .tool-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+        }
+
+        .tool-section h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .tool-section p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .tool-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tool-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--sage-dark);
+        }
+
+        .btn-white:hover {
+            background: var(--cream);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+
+        .testimonials-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--cream);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .testimonial-stars {
+            color: #F5A623;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-medium);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--brown);
+        }
+
+        /* Newsletter */
+        .newsletter-section {
+            padding: 4rem 2rem;
+            background: var(--terracotta);
+            text-align: center;
+            color: white;
+        }
+
+        .newsletter-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-section h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+
+        .newsletter-section p {
+            opacity: 0.95;
+            margin-bottom: 1.5rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.75rem;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.9rem 1.25rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+        }
+
+        .newsletter-form button {
+            background: var(--brown);
+            color: white;
+            border: none;
+            padding: 0.9rem 1.75rem;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--brown-light);
+        }
+
+        .newsletter-note {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-top: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--brown);
+            color: white;
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-brand img {
+            height: 60px;
+            margin-bottom: 1rem;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            max-width: 250px;
+        }
+
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            display: block;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            max-width: 1000px;
+            margin: 2rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile */
+        @media (max-width: 900px) {
+            .patterns-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 0.5rem 1rem;
+            }
+            
+            .nav {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .patterns-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .stats-content {
+                gap: 1.5rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-content">
+            <a href="/" class="logo">
+                <img src="images/logo-small.png" alt="Needle Treasures Nook">
+            </a>
+            <nav class="nav">
+                <a href="#patterns">Patterns</a>
+                <a href="#about">About</a>
+                <a href="thread-checker.html">Thread Checker</a>
+                <a href="https://needletreasuresnook.etsy.com" target="_blank" class="nav-cta">Shop on Etsy</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <h1>Cross-stitch Patterns Inspired by Nature</h1>
+            <p class="hero-tagline">Modern primitive designs for slow stitchers who find beauty in the wild, the worn, and the handmade.</p>
+            <p class="hero-description">For people who'd rather stitch by a window than scroll through a screen. The ones with a stack of unread books that somehow keeps growing.</p>
+            <div class="hero-buttons">
+                <a href="https://needletreasuresnook.etsy.com" target="_blank" class="btn btn-primary">Browse All Patterns</a>
+                <a href="thread-checker.html" class="btn btn-secondary">🧵 Free Thread Checker</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="stats-content">
+            <div class="stat-item">
+                <div class="stat-number">17,000+</div>
+                <div class="stat-label">Happy Stitchers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">273</div>
+                <div class="stat-label">Unique Patterns</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">⭐ Star Seller</div>
+                <div class="stat-label">Etsy Recognition</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5.0</div>
+                <div class="stat-label">Star Rating</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Patterns -->
+    <section class="patterns-section" id="patterns">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Bestselling Patterns</h2>
+            <p class="section-subtitle">Handstitched on tea-dyed linen, designed for your next heirloom</p>
+        </div>
+        <div class="patterns-grid">
+            <a href="https://needletreasuresnook.etsy.com" target="_blank" class="pattern-card fade-in">
+                <div class="pattern-image">
+                    <img src="images/patterns/curley-turkey.png" alt="The Curley Turkey cross-stitch pattern">
+                </div>
+                <div class="pattern-info">
+                    <h3 class="pattern-name">The Curley Turkey</h3>
+                    <p class="pattern-desc">Thanksgiving • Primitive Style</p>
+                </div>
+            </a>
+            <a href="https://needletreasuresnook.etsy.com" target="_blank" class="pattern-card fade-in">
+                <div class="pattern-image">
+                    <img src="images/patterns/stars-stripes-poppies.png" alt="Stars, Stripes and Poppies cross-stitch pattern">
+                </div>
+                <div class="pattern-info">
+                    <h3 class="pattern-name">Stars, Stripes & Blooms</h3>
+                    <p class="pattern-desc">Patriotic • America 250th</p>
+                </div>
+            </a>
+            <a href="https://needletreasuresnook.etsy.com" target="_blank" class="pattern-card fade-in">
+                <div class="pattern-image">
+                    <img src="images/patterns/lucky-curls.png" alt="Lucky Curls cross-stitch pattern">
+                </div>
+                <div class="pattern-info">
+                    <h3 class="pattern-name">The Lucky Curls</h3>
+                    <p class="pattern-desc">St. Patrick's Day • Clovers</p>
+                </div>
+            </a>
+            <a href="https://needletreasuresnook.etsy.com" target="_blank" class="pattern-card fade-in">
+                <div class="pattern-image">
+                    <img src="images/patterns/easter-rabbit.png" alt="Easter Rabbit cross-stitch pattern">
+                </div>
+                <div class="pattern-info">
+                    <h3 class="pattern-name">The Easter Rabbit</h3>
+                    <p class="pattern-desc">Spring • Rustic Charm</p>
+                </div>
+            </a>
+            <a href="https://needletreasuresnook.etsy.com" target="_blank" class="pattern-card fade-in">
+                <div class="pattern-image">
+                    <img src="images/patterns/tis-the-season.png" alt="Tis the Season cross-stitch pattern">
+                </div>
+                <div class="pattern-info">
+                    <h3 class="pattern-name">Tis the Season</h3>
+                    <p class="pattern-desc">Winter • Forest Trees</p>
+                </div>
+            </a>
+            <a href="https://needletreasuresnook.etsy.com" target="_blank" class="pattern-card fade-in">
+                <div class="pattern-image">
+                    <img src="images/patterns/holly-jolly-reindeer.png" alt="Holly Jolly Reindeer cross-stitch pattern">
+                </div>
+                <div class="pattern-info">
+                    <h3 class="pattern-name">Holly Jolly Reindeer</h3>
+                    <p class="pattern-desc">Christmas • Woodland</p>
+                </div>
+            </a>
+        </div>
+        <div class="view-all-link">
+            <a href="https://needletreasuresnook.etsy.com" target="_blank">View all 273 patterns →</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <div class="about-image fade-in">
+                <img src="images/logo.png" alt="Needle Treasures Nook Logo">
+            </div>
+            <div class="about-text fade-in">
+                <h2>A Needle, A Thread, A Story</h2>
+                <p>Over thirty years pulling thread through fabric. What started as a quiet craft by the window became something more — a small studio where patterns are born from morning walks, pressed flowers, and the kind of beauty you find when you're not looking too hard.</p>
+                <p>Every design is stitched by hand first, on linen I dye myself with tea, marigolds, and whatever the garden offers. Modern primitive, they call it. I just call it home.</p>
+                <p>— Marieta, Needle Treasures Nook</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Tool Section -->
+    <section class="tool-section">
+        <div class="tool-content fade-in">
+            <span class="tool-badge">Free Tool</span>
+            <h2>DMC Thread Checker</h2>
+            <p>Track your thread collection, check pattern requirements instantly, and never buy duplicates again. Works offline, saves automatically.</p>
+            <div class="tool-features">
+                <div class="tool-feature">✓ 500 DMC Colors</div>
+                <div class="tool-feature">✓ Pattern Checker</div>
+                <div class="tool-feature">✓ Shopping Lists</div>
+                <div class="tool-feature">✓ Works Offline</div>
+            </div>
+            <a href="thread-checker.html" class="btn btn-white">Open Thread Checker →</a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="section-header fade-in">
+            <h2 class="section-title">What Stitchers Say</h2>
+            <p class="section-subtitle">From our community of 17,000+ happy customers</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"The patterns are absolutely beautiful! The instructions are clear and the design stitched up perfectly. Already planning my next project!"</p>
+                <div class="testimonial-author">— Sarah M.</div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"I love the primitive rustic style! These patterns feel like heirlooms in the making. The tea-dyed linen samples are gorgeous inspiration."</p>
+                <div class="testimonial-author">— Jennifer K.</div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Fast download, beautiful design, great colors. This shop has become my go-to for unique cross-stitch patterns. Highly recommend!"</p>
+                <div class="testimonial-author">— Carol L.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="newsletter-content fade-in">
+            <h2>Join the Stitching Circle</h2>
+            <p>Get a free pattern, stitching tips, and first access to new designs</p>
+            <form class="newsletter-form" action="https://assets.mailerlite.com/jsonp/2010016/forms/175294884076324104/subscribe" method="post" target="_blank">
+                <input type="email" name="fields[email]" placeholder="Your email address" required>
+                <button type="submit">Get Free Pattern</button>
+            </form>
+            <p class="newsletter-note">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo-small.png" alt="Needle Treasures Nook">
+                <p>Cross-stitch patterns inspired by nature. Modern primitive designs on tea-dyed linen.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Shop</h4>
+                <a href="https://needletreasuresnook.etsy.com" target="_blank">Etsy Shop</a>
+                <a href="https://123stitch.com/m/from-Needle-Treasures-Nook" target="_blank">123Stitch</a>
+                <a href="https://www.patreon.com/needletreasuresnook" target="_blank">Patreon</a>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="thread-checker.html">Thread Checker</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <a href="https://www.instagram.com/needletreasuresnook" target="_blank">Instagram</a>
+                <a href="mailto:needle.treasures.nook@gmail.com">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2021-2025 Needle Treasures Nook. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/needletreasuresnook" target="_blank">📷</a>
+                <a href="https://needletreasuresnook.etsy.com" target="_blank">🛒</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky Header
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Fade-in Animation
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
