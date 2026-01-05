@@ -1,1 +1,448 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M7GEBPRY0Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M7GEBPRY0Z');
+    </script>
+    
+    <title>Cross Stitch for Beginners: Everything You Need to Start | Needle Treasures Nook</title>
+    <meta name="description" content="Complete beginner's guide to cross stitch. Learn about fabric, threads, needles, and your first stitches. Start your stitching journey today with easy tips.">
+    <meta name="keywords" content="cross stitch beginners, learn cross stitch, how to cross stitch, cross stitch supplies, beginner embroidery">
+    <link rel="canonical" href="https://needletreasuresnook.com/blog/cross-stitch-beginners-guide.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Cross Stitch for Beginners: Everything You Need to Start">
+    <meta property="og:description" content="Complete beginner's guide to cross stitch. Start your stitching journey today.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --terracotta: #C67B5C;
+            --terracotta-dark: #A85D40;
+            --cream: #F5F0E8;
+            --brown: #6B5345;
+            --sage: #8B9D83;
+            --white: #FDFCFA;
+            --text-dark: #3D3028;
+            --text-medium: #5C4D42;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            background: var(--white);
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+        
+        .header {
+            background: var(--terracotta);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .header-brand img { height: 40px; }
+        
+        .header-brand span {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        .header-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .header-nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .article {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .article-meta {
+            color: var(--text-medium);
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--brown);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-intro {
+            font-size: 1.15rem;
+            color: var(--text-medium);
+            border-left: 3px solid var(--terracotta);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .article h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            color: var(--brown);
+            margin: 2.5rem 0 1rem;
+        }
+        
+        .article h3 {
+            font-size: 1.1rem;
+            color: var(--terracotta-dark);
+            margin: 1.5rem 0 0.75rem;
+        }
+        
+        .article p { margin-bottom: 1.25rem; }
+        
+        .article ul, .article ol {
+            margin: 1rem 0 1.5rem 1.5rem;
+        }
+        
+        .article li { margin-bottom: 0.5rem; }
+        
+        .tip-box {
+            background: var(--cream);
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .tip-box strong { color: var(--terracotta-dark); }
+        
+        .supply-list {
+            background: var(--cream);
+            border-radius: 10px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+        }
+        
+        .supply-list h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--sage) 0%, #7a8e72 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+        
+        .cta-box p {
+            opacity: 0.95;
+            margin-bottom: 1.25rem;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: var(--sage);
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            background: var(--brown);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .footer a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--terracotta);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 600px) {
+            .header { flex-direction: column; gap: 1rem; }
+            .article h1 { font-size: 1.8rem; }
+            .article { padding: 2rem 1.25rem; }
+        }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Cross Stitch for Beginners: Everything You Need to Start",
+        "description": "Complete beginner's guide to cross stitch with supplies list and first steps.",
+        "author": { "@type": "Person", "name": "Marieta" },
+        "publisher": { "@type": "Organization", "name": "Needle Treasures Nook" },
+        "datePublished": "2025-01-05"
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="header-brand">
+            <img src="../logo-light.png" alt="Logo">
+            <span>Needle Treasures Nook</span>
+        </a>
+        <nav class="header-nav">
+            <a href="../index.html">Home</a>
+            <a href="../thread-checker.html">DMC Tool</a>
+            <a href="https://needletreasuresnook.etsy.com" target="_blank">Shop</a>
+        </nav>
+    </header>
+    
+    <article class="article">
+        <a href="../index.html" class="back-link">← Back to Home</a>
+        
+        <div class="article-meta">January 5, 2025 • 8 min read</div>
+        
+        <h1>Cross Stitch for Beginners: Everything You Need to Start Your Stitching Journey</h1>
+        
+        <p class="article-intro">
+            Welcome to the wonderful world of cross stitch! This ancient craft is enjoying a modern renaissance, and for good reason—it's meditative, creative, and produces beautiful results even for complete beginners.
+        </p>
+        
+        <p>I've been stitching for over 30 years, and I still remember the magic of my first completed piece. Whether you're looking for a relaxing hobby, a screen-free activity, or a way to create handmade gifts, cross stitch delivers. Let me guide you through everything you need to know to start.</p>
+        
+        <h2>What Exactly Is Cross Stitch?</h2>
+        
+        <p>Cross stitch is a form of counted embroidery where you create X-shaped stitches on an even-weave fabric. Each X covers one square of the fabric grid, and by following a pattern (like a pixel art blueprint), you build up an image stitch by stitch.</p>
+        
+        <p>Unlike free-form embroidery, cross stitch is wonderfully systematic. If you can count and make an X, you can cross stitch. The fabric guides your stitches, and the pattern tells you exactly where each color goes.</p>
+        
+        <h2>What You'll Need: The Essential Supplies</h2>
+        
+        <div class="supply-list">
+            <h3>🧵 Beginner's Shopping List</h3>
+            <ul>
+                <li><strong>Aida fabric (14-count):</strong> The beginner-friendly choice. The holes are easy to see and count.</li>
+                <li><strong>Embroidery floss:</strong> DMC is the gold standard. Start with a small kit or the colors for one pattern.</li>
+                <li><strong>Tapestry needles (size 24):</strong> Blunt tip, large eye. Perfect for 14-count Aida.</li>
+                <li><strong>Embroidery hoop (6-inch):</strong> Keeps fabric taut for easier stitching.</li>
+                <li><strong>Small scissors:</strong> Sharp embroidery scissors for clean thread cuts.</li>
+                <li><strong>A simple pattern:</strong> Start with something small—under 50 stitches wide.</li>
+            </ul>
+        </div>
+        
+        <div class="tip-box">
+            <strong>💡 Budget tip:</strong> Many craft stores sell beginner kits with everything included. These are perfect for your first project and often cost less than buying supplies separately.
+        </div>
+        
+        <h2>Understanding Fabric: Aida vs. Linen</h2>
+        
+        <h3>Aida (Start Here)</h3>
+        <p>Aida fabric has a visible grid of holes, making it easy to see exactly where each stitch should go. It comes in different "counts"—the number refers to how many stitches fit in one inch.</p>
+        
+        <ul>
+            <li><strong>11-count:</strong> Large squares, great for kids or those with vision challenges</li>
+            <li><strong>14-count:</strong> The most popular size. Perfect balance of detail and ease</li>
+            <li><strong>16-count:</strong> Slightly finer detail</li>
+            <li><strong>18-count:</strong> Small stitches, more detail, but harder to see</li>
+        </ul>
+        
+        <h3>Linen and Evenweave (Later)</h3>
+        <p>Once you're comfortable with Aida, you might explore linen or evenweave fabrics. These don't have the obvious grid but create a more "traditional" look. Many experienced stitchers (myself included!) prefer linen for its natural beauty and how thread lays on it.</p>
+        
+        <div class="tip-box">
+            <strong>💡 Beginner tip:</strong> Stick with white or light-colored 14-count Aida for your first few projects. You'll be able to see the holes clearly, and any mistakes are easy to spot and fix.
+        </div>
+        
+        <h2>All About Thread: DMC Floss</h2>
+        
+        <p>DMC embroidery floss is the most widely used thread for cross stitch. Each skein contains 6 strands loosely twisted together. For most projects, you'll separate these strands and use only 2-3 at a time.</p>
+        
+        <h3>Strand Count Guidelines:</h3>
+        <ul>
+            <li><strong>14-count Aida:</strong> Use 2 strands for cross stitches</li>
+            <li><strong>16-count Aida:</strong> Use 2 strands</li>
+            <li><strong>18-count Aida:</strong> Use 1-2 strands</li>
+            <li><strong>Backstitching:</strong> Usually 1 strand (we'll cover this later)</li>
+        </ul>
+        
+        <h3>How to Separate Strands:</h3>
+        <ol>
+            <li>Cut a length of floss (about 18 inches—armspan works!)</li>
+            <li>Hold the cut piece at one end</li>
+            <li>Gently pull ONE strand straight up and out</li>
+            <li>The other strands may bunch up—that's okay, they'll straighten</li>
+            <li>Repeat until you have the number of strands you need</li>
+            <li>Recombine your separated strands before threading the needle</li>
+        </ol>
+        
+        <div class="tip-box">
+            <strong>💡 Pro tip:</strong> Always separate strands individually, even if you need 2. Separating then recombining gives your stitches better coverage and a neater appearance.
+        </div>
+        
+        <h2>Your First Stitches: Step by Step</h2>
+        
+        <h3>Setting Up</h3>
+        <ol>
+            <li>Place your fabric in the hoop, keeping it taut but not drum-tight</li>
+            <li>Find the center of your fabric (fold in half both ways)</li>
+            <li>Find the center of your pattern (usually marked)</li>
+            <li>Start stitching from the center outward—this ensures your design is centered</li>
+        </ol>
+        
+        <h3>Making the Cross Stitch</h3>
+        <p>Each cross stitch is made in two passes:</p>
+        <ol>
+            <li><strong>First leg:</strong> Come up at bottom-left, go down at top-right (this creates a / shape)</li>
+            <li><strong>Second leg:</strong> Come up at bottom-right, go down at top-left (completing the X)</li>
+        </ol>
+        
+        <p><strong>The Golden Rule:</strong> All your top stitches should slant the same direction. It doesn't matter if you go /// then \\\ or \\\ then ///, just be consistent throughout your entire project.</p>
+        
+        <h3>Starting Without a Knot</h3>
+        <p>Knots create bumps and can come undone. Instead:</p>
+        <ol>
+            <li>Leave a 1-inch tail of thread on the back</li>
+            <li>Hold this tail against the fabric with your finger</li>
+            <li>Make your first few stitches, catching the tail underneath</li>
+            <li>Once secured, snip any excess tail</li>
+        </ol>
+        
+        <h3>Ending Your Thread</h3>
+        <p>When you run low on thread or finish a color:</p>
+        <ol>
+            <li>On the back, weave your needle under 3-4 existing stitches</li>
+            <li>Pull through and snip close to the fabric</li>
+            <li>No knots needed!</li>
+        </ol>
+        
+        <h2>Reading a Cross Stitch Pattern</h2>
+        
+        <p>Patterns are grids where each square represents one stitch. They include:</p>
+        
+        <ul>
+            <li><strong>Symbol key:</strong> Each symbol represents a thread color</li>
+            <li><strong>Color list:</strong> DMC numbers for each symbol</li>
+            <li><strong>Stitch count:</strong> Total width × height in stitches</li>
+            <li><strong>Finished size:</strong> How big it will be on different fabric counts</li>
+        </ul>
+        
+        <div class="tip-box">
+            <strong>💡 Pattern tip:</strong> Use a highlighter to mark completed rows on a paper pattern, or use a magnetic board to keep your place. For digital patterns, apps like Pattern Keeper are game-changers.
+        </div>
+        
+        <h2>Common Beginner Mistakes (And How to Avoid Them)</h2>
+        
+        <h3>1. Thread Too Long</h3>
+        <p><strong>Problem:</strong> Long threads tangle and fray from repeatedly passing through fabric.</p>
+        <p><strong>Solution:</strong> Keep threads to 18 inches maximum (about arm's length).</p>
+        
+        <h3>2. Pulling Too Tight</h3>
+        <p><strong>Problem:</strong> Fabric puckers and distorts.</p>
+        <p><strong>Solution:</strong> Stitches should lay flat without pulling the fabric. Let gravity help—don't yank.</p>
+        
+        <h3>3. Inconsistent Stitch Direction</h3>
+        <p><strong>Problem:</strong> Some top stitches go / and others go \, creating an uneven look.</p>
+        <p><strong>Solution:</strong> Pick one direction for all top stitches and stick with it. Check yourself regularly.</p>
+        
+        <h3>4. Not Enough Light</h3>
+        <p><strong>Problem:</strong> Eye strain, miscounted stitches, wrong holes.</p>
+        <p><strong>Solution:</strong> Stitch in good natural light or invest in a daylight lamp. Your eyes will thank you.</p>
+        
+        <h2>Choosing Your First Pattern</h2>
+        
+        <p>Set yourself up for success with a beginner-friendly pattern:</p>
+        
+        <ul>
+            <li><strong>Small size:</strong> Under 50 stitches wide (finishes in days, not months)</li>
+            <li><strong>Few colors:</strong> 5-8 colors maximum</li>
+            <li><strong>No backstitching:</strong> Or minimal (saves complexity for later)</li>
+            <li><strong>Clear symbols:</strong> Easy-to-distinguish chart symbols</li>
+            <li><strong>Something you love:</strong> Motivation matters!</li>
+        </ul>
+        
+        <div class="cta-box">
+            <h3>Ready to Start Stitching?</h3>
+            <p>Browse our collection of primitive, nature-inspired patterns. Many are beginner-friendly with clear charts and limited color palettes.</p>
+            <a href="https://needletreasuresnook.etsy.com" target="_blank" class="cta-btn" onclick="gtag('event', 'click', {event_category: 'blog_cta', event_label: 'beginners_guide'});">Browse Patterns →</a>
+        </div>
+        
+        <h2>Building Your Thread Collection</h2>
+        
+        <p>As you complete more projects, you'll accumulate threads. Before starting a new pattern, check what you already own against the thread list. This saves money and prevents duplicate purchases.</p>
+        
+        <p>I created a <a href="../thread-checker.html">free DMC inventory tool</a> specifically for this. Mark the threads you own, paste in a pattern's requirements, and instantly see what you need to buy. It even works offline!</p>
+        
+        <h2>Welcome to the Stitching Community</h2>
+        
+        <p>One of the best parts of cross stitch is the community. You'll find fellow stitchers on:</p>
+        
+        <ul>
+            <li><strong>Instagram:</strong> Search #crossstitch, #xstitch, #stitchersofinstagram</li>
+            <li><strong>Reddit:</strong> r/CrossStitch is wonderfully supportive</li>
+            <li><strong>Facebook groups:</strong> Thousands of niche groups for every interest</li>
+            <li><strong>Local guilds:</strong> Many areas have embroidery guilds with classes</li>
+        </ul>
+        
+        <p>Don't be shy about sharing your work in progress! The community celebrates beginners and loves seeing first projects.</p>
+        
+        <h2>Final Thoughts</h2>
+        
+        <p>Cross stitch is a journey, not a race. Your first project doesn't need to be perfect—it needs to be finished. Every experienced stitcher started exactly where you are now, making wobbly stitches and miscounting rows.</p>
+        
+        <p>The magic happens when you keep going. Before you know it, those Xs will become second nature, and you'll have a beautiful handmade piece to show for it.</p>
+        
+        <p>Welcome to the craft. I'm so glad you're here.</p>
+        
+        <p><em>Happy stitching!</em><br>— Marieta</p>
+    </article>
+    
+    <footer class="footer">
+        <p>© 2025 Needle Treasures Nook • <a href="../index.html">Home</a> • <a href="../thread-checker.html">DMC Tool</a> • <a href="https://needletreasuresnook.etsy.com" target="_blank">Shop</a></p>
+    </footer>
+</body>
+</html>
