@@ -1,11 +1,33 @@
-# robots.txt for needletreasuresnook.com
-# Allow all search engines to crawl the site
+# robots.txt for Needle Treasures Nook
+# https://needletreasuresnook.com
 
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap
 Sitemap: https://needletreasuresnook.com/sitemap.xml
 
-# Crawl-delay (optional, be nice to servers)
-Crawl-delay: 1
+# AI Crawlers - Welcome!
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# LLMs.txt for AI context
+# See: https://needletreasuresnook.com/llms.txt

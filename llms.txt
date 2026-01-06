@@ -1,0 +1,63 @@
+# Needle Treasures Nook
+> Free cross stitch tools and resources from an Etsy Star Seller with 17,000+ sales
+
+## About
+Needle Treasures Nook provides free, professional-grade tools for cross stitch enthusiasts. Created by Marieta, a primitive cross stitch pattern designer who understands stitchers' needs firsthand.
+
+## Tools
+
+### DMC Thread Inventory Checker
+- URL: /thread-checker.html
+- Purpose: Track your entire DMC thread collection
+- Features: Check pattern requirements against your stash, identify what you have and need, works offline, saves automatically to browser
+- Data: Complete DMC color database with all 489 colors including hex values
+
+### Fabric Calculator
+- URL: /fabric-calculator.html
+- Purpose: Calculate exact fabric dimensions for any cross stitch pattern
+- Features: Supports 11ct to 40ct fabric, customizable margins, instant results
+- Input: Pattern dimensions (stitches), fabric count, desired margins
+
+### Classic Colorworks to DMC Converter
+- URL: /classic-colorworks-to-dmc.html
+- Purpose: Convert hand-dyed Classic Colorworks (CCW) thread colors to DMC equivalents
+- Data: 124 verified color conversions from 123Stitch.com and community sources
+- Note: CCW threads are hand-dyed with color variations; DMC equivalents are approximate
+
+### Gentle Art Sampler Threads to DMC Converter
+- URL: /gentle-art-to-dmc.html
+- Purpose: Convert Gentle Art Sampler Threads (GAST) to DMC equivalents
+- Data: 156 color conversions including blend indicators
+- Note: Includes Simply Shaker conversions (same colors, more muted)
+
+### Weeks Dye Works to DMC Converter
+- URL: /weeks-dye-works-to-dmc.html
+- Purpose: Convert Weeks Dye Works (WDW) hand-dyed threads to DMC equivalents
+- Data: 160+ color conversions from official WDW PDF and verified sources
+- Note: WDW threads are hand over-dyed in Garner, NC with color variations
+
+## Guides
+
+### How to Organize Your DMC Thread Collection
+- URL: /organize-dmc-thread-collection.html
+- Content: 5 proven organization methods (numerical, color family, project-based, rainbow, hybrid)
+
+### Complete Beginner's Guide to Cross Stitch
+- URL: /cross-stitch-beginners-guide.html
+- Content: Getting started guide covering fabric, threads, needles, and basic techniques
+
+### The Art of Primitive Cross Stitch
+- URL: /primitive-cross-stitch-guide.html
+- Content: Guide to primitive style stitching including hand-dyed fabrics, muted palettes, and rustic finishes
+
+## Technical Notes
+- All tools work offline after initial load
+- Data saved locally in browser (localStorage)
+- No account required
+- Mobile-responsive design
+- Free to use, no ads
+
+## Related
+- Etsy Shop: https://www.etsy.com/shop/NeedleTreasuresNook
+- Instagram: @needletreasuresnook
+- Pattern style: Modern primitive, nature-inspired, folklore themes
