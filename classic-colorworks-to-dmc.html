@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M7GEBPRY0Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M7GEBPRY0Z');
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <title>Classic Colorworks to DMC Conversion Chart | Needle Treasures Nook</title>
+    <meta name="title" content="Classic Colorworks to DMC Conversion Chart | Needle Treasures Nook">
+    <meta name="description" content="Free interactive Classic Colorworks to DMC thread conversion chart. Search by color name, see DMC swatches, check your stash, and copy thread numbers instantly.">
+    <meta name="keywords" content="classic colorworks to dmc, CCW to DMC conversion, crescent colours to dmc, hand dyed thread conversion, cross stitch thread chart">
+    <meta name="author" content="Marieta - Needle Treasures Nook">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://needletreasuresnook.com/classic-colorworks-to-dmc.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://needletreasuresnook.com/classic-colorworks-to-dmc.html">
+    <meta property="og:title" content="Classic Colorworks to DMC Conversion Chart">
+    <meta property="og:description" content="Free interactive thread conversion chart with search, color swatches, and stash integration.">
+    <meta property="og:site_name" content="Needle Treasures Nook">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Classic Colorworks to DMC Conversion Chart",
+        "url": "https://needletreasuresnook.com/classic-colorworks-to-dmc.html",
+        "description": "Interactive thread conversion chart for Classic Colorworks to DMC floss with search functionality and color swatches.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="icon-96x96.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --terracotta: #C67B5C;
+            --terracotta-dark: #A85D40;
+            --sage: #8B9D83;
+            --sage-dark: #6F8066;
+            --cream: #F5F0E8;
+            --cream-dark: #EDE6DA;
+            --text-dark: #2C2C2C;
+            --text-medium: #5C5C5C;
+            --text-light: #8C8C8C;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            background: var(--cream);
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--terracotta) 0%, var(--terracotta-dark) 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-left h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .header-link {
+            color: white;
+            text-decoration: none;
+            font-size: 0.8rem;
+            padding: 0.4rem 0.8rem;
+            background: rgba(255,255,255,0.15);
+            border-radius: 15px;
+            transition: all 0.2s;
+        }
+        
+        .header-link:hover {
+            background: rgba(255,255,255,0.25);
+        }
+        
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+        }
+        
+        /* Warning Banner */
+        .warning-banner {
+            background: linear-gradient(135deg, rgba(198, 123, 92, 0.15) 0%, rgba(198, 123, 92, 0.08) 100%);
+            border: 1px solid var(--terracotta);
+            border-radius: 10px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+        
+        .warning-banner .icon {
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+        
+        .warning-banner .content {
+            flex: 1;
+        }
+        
+        .warning-banner .title {
+            font-weight: 600;
+            color: var(--terracotta-dark);
+            margin-bottom: 0.3rem;
+        }
+        
+        .warning-banner .text {
+            font-size: 0.85rem;
+            color: var(--text-medium);
+            line-height: 1.5;
+        }
+        
+        /* Search Section */
+        .search-section {
+            background: white;
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            margin-bottom: 1rem;
+        }
+        
+        .search-row {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        
+        .search-input-wrapper {
+            flex: 1;
+            min-width: 200px;
+            position: relative;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
+            border: 2px solid var(--cream-dark);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--terracotta);
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 0.85rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+        }
+        
+        .results-count {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 0.75rem;
+        }
+        
+        /* Conversion Cards */
+        .conversion-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .conversion-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .conversion-card:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .ccw-info {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .ccw-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.2rem;
+        }
+        
+        .ccw-code {
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+        
+        .arrow {
+            color: var(--text-light);
+            font-size: 1.2rem;
+        }
+        
+        .dmc-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            flex: 1.5;
+        }
+        
+        .dmc-chip {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.4rem 0.6rem;
+            background: var(--cream);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+        
+        .dmc-chip:hover {
+            background: var(--cream-dark);
+        }
+        
+        .dmc-chip.in-stash {
+            border-color: var(--sage);
+            background: rgba(139, 157, 131, 0.1);
+        }
+        
+        .dmc-chip.highlight {
+            border-color: var(--terracotta);
+            box-shadow: 0 0 0 2px rgba(198, 123, 92, 0.3);
+        }
+        
+        .dmc-chip .swatch {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.15);
+        }
+        
+        .dmc-chip .number {
+            font-weight: 600;
+        }
+        
+        .dmc-chip .check {
+            color: var(--sage-dark);
+            font-size: 0.9rem;
+        }
+        
+        .dmc-chip .copy-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.2rem;
+            color: var(--text-light);
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .dmc-chip:hover .copy-btn {
+            opacity: 1;
+        }
+        
+        .dmc-chip .copy-btn:hover {
+            color: var(--terracotta);
+        }
+        
+        /* Blend indicator */
+        .blend-note {
+            font-size: 0.7rem;
+            color: var(--text-light);
+            background: var(--cream-dark);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+        }
+        
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+        }
+        
+        .empty-state .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Credits */
+        .credits {
+            margin-top: 2rem;
+            padding: 1rem 1.25rem;
+            background: white;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        .credits-title {
+            font-weight: 600;
+            color: var(--text-medium);
+            margin-bottom: 0.5rem;
+        }
+        
+        .credits a {
+            color: var(--terracotta);
+            text-decoration: none;
+        }
+        
+        .credits a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Tools Links */
+        .tools-section {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .tool-link {
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .tool-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .tool-link .icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--sage) 0%, var(--sage-dark) 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        .tool-link .info h4 {
+            font-size: 0.9rem;
+            margin-bottom: 0.15rem;
+        }
+        
+        .tool-link .info p {
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+        
+        /* Copied toast */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--text-dark);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+        
+        footer a {
+            color: var(--terracotta);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .conversion-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .arrow {
+                transform: rotate(90deg);
+                align-self: center;
+            }
+            
+            .dmc-options {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Classic Colorworks ↔ DMC</h1>
+        </div>
+        <div class="header-right">
+            <a href="thread-checker.html" class="header-link">DMC Inventory</a>
+            <a href="fabric-calculator.html" class="header-link">Fabric Calc</a>
+            <a href="index.html" class="header-link">Home</a>
+        </div>
+    </header>
+    
+    <main class="main-container">
+        <!-- Warning Banner -->
+        <div class="warning-banner">
+            <span class="icon">🎨</span>
+            <div class="content">
+                <div class="title">Hand-Dyed Threads – Approximate Conversions</div>
+                <div class="text">
+                    Classic Colorworks threads are hand-dyed with subtle to strong color changes in each skein. DMC equivalents are approximate and will not replicate the variegated effect. This chart includes <strong>124 of 280+ CCW colors</strong> – newer releases and some colors lack community-sourced DMC equivalents. For best results, use the original threads when possible.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-row">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search by CCW name or DMC number...">
+                </div>
+            </div>
+            <div class="results-count" id="resultsCount">Showing all 124 colors</div>
+        </div>
+        
+        <!-- Conversion List -->
+        <div class="conversion-list" id="conversionList">
+            <!-- Filled by JavaScript -->
+        </div>
+        
+        <!-- Credits -->
+        <div class="credits">
+            <div class="credits-title">Sources & Credits</div>
+            <p>Conversion data compiled from multiple cross-stitch community resources including contributions from Beth Twist, The Stitchers' Village, and the broader needlework community. These are community-sourced approximations, not official manufacturer conversions.</p>
+        </div>
+        
+        <!-- Other Tools -->
+        <div class="tools-section">
+            <a href="gentle-art-to-dmc.html" class="tool-link">
+                <div class="icon">🧵</div>
+                <div class="info">
+                    <h4>Gentle Art → DMC</h4>
+                    <p>Another popular hand-dyed brand</p>
+                </div>
+            </a>
+            <a href="weeks-dye-works-to-dmc.html" class="tool-link">
+                <div class="icon">🎨</div>
+                <div class="info">
+                    <h4>Weeks Dye Works → DMC</h4>
+                    <p>WDW thread conversions</p>
+                </div>
+            </a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 <a href="index.html">Needle Treasures Nook</a>. Free tools for cross stitch lovers.</p>
+    </footer>
+    
+    <div class="toast" id="toast">Copied!</div>
+    
+    <script>
+        // Classic Colorworks to DMC conversion data
+        // Compiled from multiple community sources
+        const conversionData = [
+            { ccw: "12 Grain", code: "CCT-180", dmc: ["840", "841"] },
+            { ccw: "Almost Auburn", code: "CCT-156", dmc: ["801"] },
+            { ccw: "Amber Waves", code: "CCT-093", dmc: ["837"] },
+            { ccw: "Amethyst", code: "CCT-001", dmc: ["333", "210", "3836"] },
+            { ccw: "Antique Lace", code: "CCT-125", dmc: ["822"] },
+            { ccw: "Argyle Socks", code: "CCT-092", dmc: ["208"] },
+            { ccw: "Aunt Marie's Violet", code: "CCT-061", dmc: ["3041"] },
+            { ccw: "Baby Chick", code: "CCT-002", dmc: ["3078"] },
+            { ccw: "Balsam Fir", code: "CCT-157", dmc: ["934", "935"] },
+            { ccw: "Bandana", code: "CCT-094", dmc: ["498"] },
+            { ccw: "Barn Door", code: "CCT-095", dmc: ["3328"] },
+            { ccw: "Barrel Cactus", code: "CCT-031", dmc: ["372", "522"] },
+            { ccw: "Bean Sprout", code: "CCT-184", dmc: ["733"] },
+            { ccw: "Bella Rosa", code: "CCT-047", dmc: ["152", "353"] },
+            { ccw: "Betty Bluebell", code: "CCT-048", dmc: ["340", "798", "799", "809", "3746"] },
+            { ccw: "Bing Cherry", code: "CCT-151", dmc: ["777", "902", "3371"] },
+            { ccw: "Black Coffee", code: "CCT-004", dmc: ["310", "844"] },
+            { ccw: "Blessed Jess", code: "CCT-133", dmc: ["224", "3771", "3774"] },
+            { ccw: "Blue Beadboard", code: "CCT-120", dmc: ["3752"] },
+            { ccw: "Blue Beatrice", code: "CCT-132", dmc: ["158", "803"] },
+            { ccw: "Blue Moon", code: "CCT-005", dmc: ["160", "793", "794"] },
+            { ccw: "Blushing Beauty", code: "CCT-169", dmc: ["335"] },
+            { ccw: "Boysenberry Jam", code: "CCT-049", dmc: ["3607", "3834"] },
+            { ccw: "Bramble Bush", code: "CCT-130", dmc: ["801", "898", "938", "3371"] },
+            { ccw: "Brandied Pears", code: "CCT-171", dmc: ["975", "3836"] },
+            { ccw: "Bunny Honey", code: "CCT-141", dmc: ["407", "3772"] },
+            { ccw: "Calico Kitty", code: "CCT-096", dmc: ["400", "938", "3826"] },
+            { ccw: "Camouflage", code: "CCT-063", dmc: ["500", "535"] },
+            { ccw: "Candied Yams", code: "CCT-006", dmc: ["352", "3778", "3771"] },
+            { ccw: "Candy Corn", code: "CCT-173", dmc: ["347", "743"] },
+            { ccw: "Cappuccino", code: "CCT-007", dmc: ["779", "838", "3772", "3858", "3860"] },
+            { ccw: "Caribbean Waters", code: "CCT-050", dmc: ["807", "3846"] },
+            { ccw: "Carrie Berry", code: "CCT-051", dmc: ["309", "335"] },
+            { ccw: "Cerise", code: "CCT-008", dmc: ["602", "893", "917"] },
+            { ccw: "Cherry Tomato", code: "CCT-034", dmc: ["3705"] },
+            { ccw: "Chili Pepper", code: "CCT-167", dmc: ["918"] },
+            { ccw: "Chocolate Cream Pie", code: "CCT-009", dmc: ["451", "838", "3861"] },
+            { ccw: "Clay Pot", code: "CCT-078", dmc: ["3722"] },
+            { ccw: "Cloud", code: "CCT-010", dmc: ["Blanc", "775", "3756"] },
+            { ccw: "Cobbled Peach", code: "CCT-129", dmc: ["754"] },
+            { ccw: "Cocoa Bean", code: "CCT-172", dmc: ["839", "3021"] },
+            { ccw: "Colonial Copper", code: "CCT-170", dmc: ["921", "3772"] },
+            { ccw: "Cool Azul", code: "CCT-079", dmc: ["820"] },
+            { ccw: "Copper Penny", code: "CCT-158", dmc: ["3776"] },
+            { ccw: "Cottage Garden", code: "CCT-064", dmc: ["372", "745", "3064"] },
+            { ccw: "Country Lane", code: "CCT-126", dmc: ["950", "3064", "3774"] },
+            { ccw: "Creamy Peach", code: "CCT-011", dmc: ["951"] },
+            { ccw: "Creeping Jenny", code: "CCT-138", dmc: ["369"] },
+            { ccw: "Crushed Pineapple", code: "CCT-052", dmc: ["745", "3078", "3822"] },
+            { ccw: "Cupid", code: "CCT-012", dmc: ["304"] },
+            { ccw: "Dandelion Stem", code: "CCT-119", dmc: ["734"] },
+            { ccw: "Deep Blue Sea", code: "CCT-065", dmc: ["931", "3750", "3760"] },
+            { ccw: "Deep Fennel", code: "CCT-053", dmc: ["926", "927"] },
+            { ccw: "Desert Mesquite", code: "CCT-066", dmc: ["732", "3052", "3362"] },
+            { ccw: "Dulce de Leche", code: "CCT-143", dmc: ["945"] },
+            { ccw: "Erin Go Emerald", code: "CCT-165", dmc: ["500", "561"] },
+            { ccw: "Eve's Leaves", code: "CCT-139", dmc: ["471"] },
+            { ccw: "Fancy Green Nancy", code: "CCT-117", dmc: ["700"] },
+            { ccw: "Fleur de Lilac", code: "CCT-123", dmc: ["211"] },
+            { ccw: "Fool's Gold", code: "CCT-081", dmc: ["612", "676", "782", "3045"] },
+            { ccw: "Frozen Margarita", code: "CCT-054", dmc: ["320", "704"] },
+            { ccw: "Garden Trellis", code: "CCT-128", dmc: ["3024"] },
+            { ccw: "Ginger Snap", code: "CCT-014", dmc: ["422", "677", "729"] },
+            { ccw: "Golden Star", code: "CCT-082", dmc: ["724", "742", "744", "3853"] },
+            { ccw: "Goldfish", code: "CCT-015", dmc: ["351", "761", "3341"] },
+            { ccw: "Granny Annie", code: "CCT-083", dmc: ["791"] },
+            { ccw: "Grape Pie", code: "CCT-016", dmc: ["552", "3740", "3835"] },
+            { ccw: "Green Onion", code: "CCT-017", dmc: ["523", "3072", "Ecru"] },
+            { ccw: "Hickory Sticks", code: "CCT-166", dmc: ["934", "3031"] },
+            { ccw: "Housewine", code: "CCT-035", dmc: ["315", "602", "3726"] },
+            { ccw: "Hydrangea", code: "CCT-018", dmc: ["211", "3747", "Blanc"] },
+            { ccw: "Jakey Brown", code: "CCT-036", dmc: ["407", "436", "3064"] },
+            { ccw: "Jelly Roll", code: "CCT-098", dmc: ["915"] },
+            { ccw: "Jolly Holly", code: "CCT-159", dmc: ["895", "3345", "3346"] },
+            { ccw: "Just Rust", code: "CCT-144", dmc: ["918", "919"] },
+            { ccw: "Khaki Mocha", code: "CCT-055", dmc: ["343", "611", "613"] },
+            { ccw: "La Tierra", code: "CCT-084", dmc: ["645", "840"] },
+            { ccw: "Lavender Louise", code: "CCT-037", dmc: ["3608", "3609", "3835"] },
+            { ccw: "Lemon Lime", code: "CCT-019", dmc: ["727", "772", "966"] },
+            { ccw: "Lettuce Leaf", code: "CCT-020", dmc: ["964", "3815"] },
+            { ccw: "Little Pink Peony", code: "CCT-121", dmc: ["151"] },
+            { ccw: "Lobster Claw", code: "CCT-174", dmc: ["606"] },
+            { ccw: "Lunar Eclipse", code: "CCT-099", dmc: ["647"] },
+            { ccw: "Meadow Green", code: "CCT-021", dmc: ["502"] },
+            { ccw: "Milady's Teal", code: "CCT-150", dmc: ["168", "318", "3024"] },
+            { ccw: "Old Blue Jeans", code: "CCT-154", dmc: ["924"] },
+            { ccw: "Old Oak Tree", code: "CCT-145", dmc: ["632", "839", "3863"] },
+            { ccw: "Organza Pink", code: "CCT-022", dmc: ["316", "778", "3608", "3609", "3727"] },
+            { ccw: "Pansy Purple", code: "CCT-102", dmc: ["154", "308", "327"] },
+            { ccw: "Pea Pod", code: "CCT-183", dmc: ["730", "731", "732"] },
+            { ccw: "Persimmon", code: "CCT-142", dmc: ["350"] },
+            { ccw: "Petite Maison", code: "CCT-127", dmc: ["928"] },
+            { ccw: "Pink Champagne", code: "CCT-056", dmc: ["815", "3805"] },
+            { ccw: "Pink Posey", code: "CCT-024", dmc: ["899"] },
+            { ccw: "Pixie Dust", code: "CCT-112", dmc: ["3806"] },
+            { ccw: "Poblano Pepper", code: "CCT-069", dmc: ["3347"] },
+            { ccw: "Prickly Pear", code: "CCT-025", dmc: ["3803"] },
+            { ccw: "Pumpkin Harvest", code: "CCT-057", dmc: ["402", "920", "922"] },
+            { ccw: "Purple Toile", code: "CCT-058", dmc: ["554"] },
+            { ccw: "Rainy Day", code: "CCT-103", dmc: ["550"] },
+            { ccw: "Razzleberry", code: "CCT-161", dmc: ["3685", "3687"] },
+            { ccw: "Ripe Melon", code: "CCT-026", dmc: ["891", "892"] },
+            { ccw: "Root Beer Float", code: "CCT-027", dmc: ["452", "3772", "3860"] },
+            { ccw: "Sassy Brass", code: "CCT-071", dmc: ["434", "780", "783", "3852"] },
+            { ccw: "Secondhand Rose", code: "CCT-124", dmc: ["3326"] },
+            { ccw: "Shamrock", code: "CCT-028", dmc: ["367", "501", "502"] },
+            { ccw: "Shrimp Cocktail", code: "CCT-038", dmc: ["3779"] },
+            { ccw: "Smoke", code: "CCT-039", dmc: ["823", "926", "3799"] },
+            { ccw: "Spinach", code: "CCT-029", dmc: ["300", "3345"] },
+            { ccw: "Spun Sugar", code: "CCT-030", dmc: ["368", "818", "Blanc"] },
+            { ccw: "St. Bernard", code: "CCT-105", dmc: ["502", "561", "3022"] },
+            { ccw: "Sugar and Spice", code: "CCT-040", dmc: ["153", "211", "605"] },
+            { ccw: "Sunshine Girl", code: "CCT-072", dmc: ["725"] },
+            { ccw: "Sunset", code: "CCT-059", dmc: ["352", "3706", "3801"] },
+            { ccw: "Tabby", code: "CCT-042", dmc: ["415", "Blanc"] },
+            { ccw: "Tangerine", code: "CCT-043", dmc: ["722"] },
+            { ccw: "Tartan Plaid", code: "CCT-073", dmc: ["312"] },
+            { ccw: "Tennessee Red Clay", code: "CCT-131", dmc: ["356", "3777", "3830"] },
+            { ccw: "Tufted Yellow", code: "CCT-122", dmc: ["725", "783", "3047"] },
+            { ccw: "Vintage Violet", code: "CCT-045", dmc: ["553", "793"] },
+            { ccw: "Wasabi", code: "CCT-113", dmc: ["3012", "3053"] },
+            { ccw: "Wavy Navy", code: "CCT-075", dmc: ["939"] },
+            { ccw: "Weeping Willow", code: "CCT-162", dmc: ["368", "732", "3053", "3363", "3364"] },
+            { ccw: "Wild Oats", code: "CCT-060", dmc: ["841", "842"] }
+        ];
+        
+        // DMC color database (subset for swatches)
+        const dmcColors = {
+            "Blanc": "#FFFFFF", "Ecru": "#F0EAD6",
+            "151": "#F0C4C4", "152": "#E2A099", "153": "#E6CEE3", "154": "#572433",
+            "158": "#4C526E", "160": "#999EAA", "168": "#D1D1D1",
+            "208": "#835B98", "210": "#C3A0C3", "211": "#E6CFE6",
+            "300": "#6F3912", "304": "#B41F42", "309": "#BA2D50", "310": "#000000",
+            "312": "#2E4E6E", "315": "#814B61", "316": "#B76A7C", "318": "#949494",
+            "320": "#698B69", "327": "#5E3A6E", "335": "#EE546E", "340": "#ADA7C7",
+            "347": "#BF2C3E", "350": "#E04848", "351": "#E96A67", "352": "#FD9072",
+            "353": "#FEC4B2", "356": "#C36853", "367": "#617455", "368": "#A6C39E",
+            "369": "#D6E6C8", "372": "#C2B078", "400": "#8C4E24", "402": "#F6A568",
+            "407": "#BA8B7A", "413": "#545454", "414": "#646464", "415": "#C8C8C8",
+            "420": "#A07040", "422": "#C09858", "434": "#985830", "436": "#C08048",
+            "451": "#907872", "452": "#C0A8A0", "498": "#A71930", "500": "#044030",
+            "501": "#406050", "502": "#587868", "520": "#586048", "522": "#909878",
+            "523": "#A0A890", "535": "#484848", "550": "#5C2058", "552": "#803880",
+            "553": "#A050A0", "554": "#D898D8", "561": "#2C6850", "602": "#D82858",
+            "605": "#F898B8", "606": "#F83820", "611": "#806040", "612": "#A08858",
+            "613": "#C0A878", "632": "#A05C40", "645": "#686460", "647": "#988C88",
+            "676": "#E0C078", "677": "#F0DCA8", "700": "#08A048", "704": "#58C848",
+            "720": "#E06830", "721": "#F08040", "722": "#F89860", "724": "#FFA500",
+            "725": "#FFC840", "727": "#FFF0A0", "729": "#D0A848", "730": "#887828",
+            "731": "#908030", "732": "#988838", "733": "#C8B048", "734": "#C8C048",
+            "742": "#FFDC78", "743": "#FFD858", "744": "#FFE898", "745": "#FFF4B8",
+            "754": "#F8D8C8", "761": "#FFC8C8", "772": "#D8E8B8", "775": "#D8E8F0",
+            "778": "#D8A8A8", "779": "#704038", "780": "#A06818", "782": "#B87818",
+            "783": "#C88818", "791": "#464878", "793": "#7090B8", "794": "#8FAED0",
+            "798": "#4878A8", "799": "#6498C8", "801": "#583818", "803": "#2C4068",
+            "807": "#6898A8", "809": "#88B8E8", "815": "#882838", "818": "#FFE8F0",
+            "820": "#182878", "822": "#E8E0D0", "823": "#282858", "838": "#483020",
+            "839": "#5C4030", "840": "#988068", "841": "#B8A090", "842": "#C8B8A8",
+            "844": "#585450", "891": "#FF6878", "892": "#FF7888", "893": "#F87080",
+            "895": "#284828", "898": "#4C3020", "899": "#F87898", "902": "#802838",
+            "915": "#882858", "917": "#882860", "918": "#A03820", "919": "#A04820",
+            "920": "#A85838", "921": "#C06838", "922": "#C87838", "924": "#485860",
+            "926": "#687880", "927": "#A0B0B0", "928": "#C0D0D0", "931": "#5878A0",
+            "934": "#303828", "935": "#404838", "938": "#4C3018", "939": "#202058",
+            "945": "#F8D8C0", "948": "#FEF0E8", "950": "#EED0C0", "951": "#FFE8D8",
+            "964": "#A0E8D8", "966": "#B8E8C8", "972": "#FFB818", "975": "#884820",
+            "3012": "#A09860", "3021": "#504840", "3022": "#8C9080", "3024": "#E8E4E0",
+            "3031": "#4C3C28", "3041": "#987898", "3045": "#B89058", "3047": "#E8DCC0",
+            "3052": "#889878", "3053": "#9CA890", "3064": "#C89878", "3072": "#E0E0D8",
+            "3078": "#FFF8D8", "3326": "#FFB8C8", "3341": "#FC9078", "3345": "#386028",
+            "3346": "#487838", "3347": "#709858", "3362": "#586048", "3363": "#728858",
+            "3364": "#88A070", "3371": "#301810", "3607": "#C050A8", "3608": "#E898D0",
+            "3609": "#F4B8E0", "3685": "#882848", "3687": "#C86088", "3705": "#FF7888",
+            "3706": "#FF9098", "3721": "#A04850", "3722": "#B85858", "3726": "#985068",
+            "3727": "#E0A8B8", "3740": "#785868", "3746": "#7878B8", "3747": "#D0D0F0",
+            "3750": "#385878", "3752": "#C0D0E0", "3753": "#D8E0E8", "3756": "#E8F0F8",
+            "3760": "#3880A0", "3771": "#F4B8A0", "3772": "#A07060", "3774": "#F0D8C8",
+            "3776": "#C86840", "3777": "#983028", "3778": "#D88878", "3779": "#F8C8B8",
+            "3799": "#424242", "3801": "#E84858", "3803": "#882848", "3805": "#F05898",
+            "3806": "#F880B0", "3815": "#487858", "3822": "#F8DC78", "3826": "#C87828",
+            "3830": "#B86050", "3834": "#883878", "3835": "#9868A0", "3836": "#B888B8",
+            "3846": "#08C8E0", "3852": "#C89808", "3853": "#F8A838", "3860": "#887078",
+            "3861": "#C0A8A8", "3863": "#C8A890"
+        };
+        
+        // Get user's DMC collection from localStorage
+        function getUserCollection() {
+            try {
+                const saved = localStorage.getItem('dmcCollection');
+                if (saved) {
+                    return new Map(JSON.parse(saved));
+                }
+            } catch (e) {}
+            return new Map();
+        }
+        
+        let userCollection = getUserCollection();
+        
+        // Search input
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', renderList);
+        
+        function renderList() {
+            const query = searchInput.value.toLowerCase().trim();
+            const listEl = document.getElementById('conversionList');
+            const countEl = document.getElementById('resultsCount');
+            
+            let filtered = conversionData;
+            
+            if (query) {
+                // Search both CCW name/code AND DMC numbers
+                filtered = conversionData.filter(item => 
+                    item.ccw.toLowerCase().includes(query) ||
+                    item.code.toLowerCase().includes(query) ||
+                    item.dmc.some(d => d.toLowerCase().includes(query))
+                );
+                
+                // Sort: exact DMC matches first, then CCW name matches
+                filtered = [...filtered].sort((a, b) => {
+                    const aExactDMC = a.dmc.some(d => d.toLowerCase() === query);
+                    const bExactDMC = b.dmc.some(d => d.toLowerCase() === query);
+                    if (aExactDMC !== bExactDMC) return bExactDMC - aExactDMC;
+                    
+                    const aStartsCCW = a.ccw.toLowerCase().startsWith(query);
+                    const bStartsCCW = b.ccw.toLowerCase().startsWith(query);
+                    return bStartsCCW - aStartsCCW;
+                });
+            }
+            
+            countEl.textContent = `Showing ${filtered.length} of ${conversionData.length} colors`;
+            
+            if (filtered.length === 0) {
+                listEl.innerHTML = `
+                    <div class="empty-state">
+                        <div class="icon">🔍</div>
+                        <p>No colors found for "${query}"</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            listEl.innerHTML = filtered.map(item => {
+                const dmcChips = item.dmc.map(dmc => {
+                    const color = dmcColors[dmc] || '#cccccc';
+                    const inStash = userCollection.has(dmc);
+                    const isMatch = query && dmc.toLowerCase().includes(query);
+                    return `
+                        <div class="dmc-chip ${inStash ? 'in-stash' : ''} ${isMatch ? 'highlight' : ''}" data-dmc="${dmc}">
+                            <span class="swatch" style="background: ${color}"></span>
+                            <span class="number">${dmc}</span>
+                            ${inStash ? '<span class="check">✓</span>' : ''}
+                            <button class="copy-btn" onclick="copyDMC('${dmc}', event)" title="Copy">📋</button>
+                        </div>
+                    `;
+                }).join('');
+                
+                return `
+                    <div class="conversion-card">
+                        <div class="ccw-info">
+                            <div class="ccw-name">${item.ccw}</div>
+                            <div class="ccw-code">${item.code}</div>
+                        </div>
+                        <span class="arrow">↔</span>
+                        <div class="dmc-options">
+                            ${dmcChips}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function copyDMC(dmc, event) {
+            event.stopPropagation();
+            navigator.clipboard.writeText(dmc).then(() => {
+                showToast(`Copied DMC ${dmc}`);
+            });
+            
+            gtag('event', 'copy_dmc', {
+                'event_category': 'Thread Conversion',
+                'event_label': dmc
+            });
+        }
+        
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+        
+        // Initial render
+        renderList();
+        
+        // Track page view
+        gtag('event', 'page_view', {
+            'event_category': 'Thread Conversion',
+            'event_label': 'Classic Colorworks to DMC'
+        });
+    </script>
+</body>
+</html>
