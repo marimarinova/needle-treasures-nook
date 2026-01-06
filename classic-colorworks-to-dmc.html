@@ -411,6 +411,17 @@
             color: var(--text-light);
         }
         
+        /* Blend note */
+        .blend-note {
+            font-size: 0.7rem;
+            color: var(--terracotta);
+            background: rgba(198, 123, 92, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            white-space: nowrap;
+        }
+        
         /* Copied toast */
         .toast {
             position: fixed;
@@ -480,7 +491,7 @@
             <div class="content">
                 <div class="title">Hand-Dyed Threads – Approximate Conversions</div>
                 <div class="text">
-                    Classic Colorworks threads are hand-dyed with subtle to strong color changes in each skein. DMC equivalents are approximate and will not replicate the variegated effect. This chart includes <strong>124 of 280+ CCW colors</strong> – newer releases and some colors lack community-sourced DMC equivalents. For best results, use the original threads when possible.
+                    Classic Colorworks (formerly Crescent Colours) are hand-dyed with subtle to strong color changes in each skein. DMC equivalents are approximate and won't replicate the variegated effect. This chart includes <strong>124 colors</strong> with verified DMC equivalents from 123Stitch.com and cross-stitch community sources.
                 </div>
             </div>
         </div>
@@ -504,7 +515,7 @@
         <!-- Credits -->
         <div class="credits">
             <div class="credits-title">Sources & Credits</div>
-            <p>Conversion data compiled from multiple cross-stitch community resources including contributions from Beth Twist, The Stitchers' Village, and the broader needlework community. These are community-sourced approximations, not official manufacturer conversions.</p>
+            <p>Conversion data verified against <strong>123Stitch.com</strong> official conversion chart and cross-referenced with community resources including Beth Twist, The Stitchers' Village, and MyStitchWorld. Multiple DMC options shown where applicable.</p>
         </div>
         
         <!-- Other Tools -->
@@ -512,14 +523,14 @@
             <a href="gentle-art-to-dmc.html" class="tool-link">
                 <div class="icon">🧵</div>
                 <div class="info">
-                    <h4>Gentle Art → DMC</h4>
-                    <p>Another popular hand-dyed brand</p>
+                    <h4>Gentle Art ↔ DMC</h4>
+                    <p>GAST thread conversions</p>
                 </div>
             </a>
             <a href="weeks-dye-works-to-dmc.html" class="tool-link">
                 <div class="icon">🎨</div>
                 <div class="info">
-                    <h4>Weeks Dye Works → DMC</h4>
+                    <h4>Weeks Dye Works ↔ DMC</h4>
                     <p>WDW thread conversions</p>
                 </div>
             </a>
@@ -792,6 +803,8 @@
                     `;
                 }).join('');
                 
+                const blendNote = item.blend ? '<span class="blend-note">blend 1 ply each</span>' : '';
+                
                 return `
                     <div class="conversion-card">
                         <div class="ccw-info">
@@ -801,6 +814,7 @@
                         <span class="arrow">↔</span>
                         <div class="dmc-options">
                             ${dmcChips}
+                            ${blendNote}
                         </div>
                     </div>
                 `;
