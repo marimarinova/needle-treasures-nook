@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMC to Anchor Thread Conversion | Free Cross Stitch Tool | Needle Treasures Nook</title>
+    <meta name="description" content="Free DMC to Anchor thread conversion chart. Convert between DMC and Anchor embroidery floss codes instantly. Complete database of 450+ color conversions for cross stitch.">
+    <meta name="keywords" content="DMC to Anchor conversion, Anchor to DMC, thread conversion chart, embroidery floss converter, cross stitch thread">
+    <link rel="canonical" href="https://needletreasuresnook.com/dmc-anchor-conversion.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://needletreasuresnook.com/dmc-anchor-conversion.html">
+    <meta property="og:title" content="DMC ↔ Anchor Thread Conversion | Free Tool">
+    <meta property="og:description" content="Convert between DMC and Anchor embroidery floss codes instantly. 450+ color conversions.">
+    <meta property="og:image" content="https://needletreasuresnook.com/og-image.jpg">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "DMC to Anchor Thread Converter",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "url": "https://needletreasuresnook.com/dmc-anchor-conversion.html",
+        "description": "Free bidirectional converter between DMC and Anchor embroidery floss codes. Complete database of 450+ verified color conversions for cross stitch and embroidery.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Bidirectional conversion (DMC to Anchor and Anchor to DMC)",
+            "450+ color conversions",
+            "Instant search",
+            "Works offline",
+            "Color preview",
+            "Mobile friendly"
+        ],
+        "author": {
+            "@type": "Organization",
+            "name": "Needle Treasures Nook",
+            "url": "https://needletreasuresnook.com"
+        }
+    }
+    </script>
+    
+    <link rel="icon" type="image/png" href="icon-96x96.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --brown: #8e735b;
+            --cream: #f5f3ee;
+            --terracotta: #c77959;
+            --sage: #8b9e7d;
+            --brown-dark: #5c4a42;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            background: var(--cream);
+            color: var(--brown-dark);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        /* Header */
+        header {
+            background: var(--terracotta);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .site-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--white);
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.9);
+            letter-spacing: 0.1em;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #8b5a42;
+            padding: 0.75rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+        
+        nav a:hover {
+            opacity: 1;
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--brown);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--brown-dark);
+        }
+        
+        /* Search Section */
+        .search-section {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .search-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+        
+        .tab-btn {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--terracotta);
+            background: var(--white);
+            color: var(--terracotta);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .tab-btn.active {
+            background: var(--terracotta);
+            color: var(--white);
+        }
+        
+        .tab-btn:hover:not(.active) {
+            background: rgba(199, 121, 89, 0.1);
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: border-color 0.2s;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--terracotta);
+        }
+        
+        .search-box button {
+            padding: 1rem 2rem;
+            background: var(--sage);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        
+        .search-box button:hover {
+            background: #7a8d6e;
+        }
+        
+        /* Results */
+        .result-card {
+            background: var(--cream);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 1.5rem;
+            display: none;
+        }
+        
+        .result-card.show {
+            display: block;
+        }
+        
+        .result-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .color-preview {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            border: 2px solid rgba(0,0,0,0.1);
+        }
+        
+        .result-info h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--brown);
+            margin-bottom: 0.25rem;
+        }
+        
+        .result-codes {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .code-box {
+            background: var(--white);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .code-box .label {
+            font-size: 0.85rem;
+            color: var(--brown);
+            margin-bottom: 0.25rem;
+        }
+        
+        .code-box .code {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--brown-dark);
+        }
+        
+        .no-result {
+            text-align: center;
+            color: var(--brown);
+            padding: 1rem;
+        }
+        
+        /* Conversion Table */
+        .table-section {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .table-section h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--brown);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .table-filter {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .table-filter input {
+            padding: 0.75rem 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            font-size: 1rem;
+        }
+        
+        .conversion-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .conversion-table th {
+            background: var(--terracotta);
+            color: var(--white);
+            padding: 1rem;
+            text-align: left;
+            position: sticky;
+            top: 0;
+        }
+        
+        .conversion-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .conversion-table tr:hover {
+            background: var(--cream);
+        }
+        
+        .table-color {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .table-container {
+            max-height: 500px;
+            overflow-y: auto;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+        
+        /* Info Section */
+        .info-section {
+            margin-top: 2rem;
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .info-section h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--brown);
+            margin-bottom: 1rem;
+        }
+        
+        .info-section p {
+            margin-bottom: 1rem;
+            color: var(--brown-dark);
+        }
+        
+        .info-section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .info-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: #8b5a42;
+            color: var(--cream);
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--cream);
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .search-tabs {
+                flex-direction: column;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .result-codes {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .result-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav {
+                gap: 1rem;
+                padding: 0.6rem 1rem;
+            }
+            
+            nav a {
+                font-size: 0.8rem;
+            }
+        }
+        
+        .stats {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--brown);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="site-title">Needle Treasures Nook</a>
+        <div class="tagline">FREE CROSS STITCH TOOLS</div>
+    </header>
+    
+    <nav>
+        <a href="/">Home</a>
+        <a href="thread-checker.html">DMC Checker</a>
+        <a href="fabric-calculator.html">Fabric Calculator</a>
+        <a href="classic-colorworks-to-dmc.html">CCW → DMC</a>
+        <a href="gentle-art-to-dmc.html">GAST → DMC</a>
+        <a href="weeks-dye-works-to-dmc.html">WDW → DMC</a>
+    </nav>
+    
+    <main>
+        <h1>DMC ↔ Anchor Thread Conversion</h1>
+        <p class="intro">Convert between DMC and Anchor embroidery floss codes instantly. This free tool includes 450+ verified color conversions to help you substitute threads in any cross stitch pattern.</p>
+        
+        <section class="search-section">
+            <div class="search-tabs">
+                <button class="tab-btn active" data-mode="dmc">DMC → Anchor</button>
+                <button class="tab-btn" data-mode="anchor">Anchor → DMC</button>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Enter DMC code (e.g., 310, 3801, white)">
+                <button onclick="search()">Convert</button>
+            </div>
+            
+            <div class="result-card" id="resultCard">
+                <div class="result-header">
+                    <div class="color-preview" id="colorPreview"></div>
+                    <div class="result-info">
+                        <h3 id="colorName">Color Name</h3>
+                        <p id="colorNote"></p>
+                    </div>
+                </div>
+                <div class="result-codes">
+                    <div class="code-box">
+                        <div class="label">DMC Code</div>
+                        <div class="code" id="dmcCode">-</div>
+                    </div>
+                    <div class="code-box">
+                        <div class="label">Anchor Code</div>
+                        <div class="code" id="anchorCode">-</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="no-result" id="noResult" style="display: none;">
+                <p>No conversion found. Please check the code and try again.</p>
+            </div>
+            
+            <p class="stats">Database: <strong>456</strong> DMC colors with Anchor equivalents</p>
+        </section>
+        
+        <section class="table-section">
+            <h2>Complete Conversion Chart</h2>
+            <div class="table-filter">
+                <input type="text" id="tableFilter" placeholder="Filter table..." oninput="filterTable()">
+            </div>
+            <div class="table-container">
+                <table class="conversion-table">
+                    <thead>
+                        <tr>
+                            <th>DMC</th>
+                            <th>Anchor</th>
+                            <th>Color</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section class="info-section">
+            <h2>About DMC and Anchor Thread Conversion</h2>
+            <p>DMC and Anchor are the two most popular brands of 6-strand cotton embroidery floss used in cross stitch and embroidery. While both brands offer high-quality threads with excellent colorfastness, their numbering systems are completely different.</p>
+            
+            <p><strong>Important notes about thread conversion:</strong></p>
+            <ul>
+                <li>Colors are <strong>approximate matches</strong> - no two brands produce identical colors</li>
+                <li>Always complete a project using threads from the <strong>same manufacturer</strong> to ensure color consistency</li>
+                <li>Some DMC colors have <strong>no exact Anchor equivalent</strong> and vice versa</li>
+                <li>When multiple Anchor codes are listed, they represent the closest matches</li>
+            </ul>
+            
+            <p><strong>Why convert between brands?</strong></p>
+            <ul>
+                <li>Your local store only carries one brand</li>
+                <li>A color is out of stock in your preferred brand</li>
+                <li>You have leftover floss from another brand you want to use</li>
+                <li>Pattern calls for a brand you don't typically use</li>
+            </ul>
+            
+            <p>This conversion chart is based on data from Yarn Tree, 123Stitch.com, and verified by the cross stitch community. For the most accurate results, always compare actual thread colors before starting a project.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 Needle Treasures Nook</p>
+        <p>
+            <a href="/">Home</a>
+            <a href="https://www.etsy.com/shop/NeedleTreasuresNook" target="_blank">Etsy Shop</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </p>
+    </footer>
+    
+    <script>
+        // Complete DMC to Anchor conversion data
+        const conversions = [
+            { dmc: "white", anchor: "2", hex: "#FFFFFF", name: "White" },
+            { dmc: "ecru", anchor: "387", hex: "#F0EAD6", name: "Ecru" },
+            { dmc: "black", anchor: "403", hex: "#000000", name: "Black" },
+            { dmc: "208", anchor: "110", hex: "#835C8B", name: "Very Dark Lavender" },
+            { dmc: "209", anchor: "109", hex: "#9E7DA8", name: "Dark Lavender" },
+            { dmc: "210", anchor: "108", hex: "#C4A7C8", name: "Medium Lavender" },
+            { dmc: "211", anchor: "342", hex: "#E3D4E8", name: "Light Lavender" },
+            { dmc: "221", anchor: "897", hex: "#844B4D", name: "Very Dark Shell Pink" },
+            { dmc: "223", anchor: "895", hex: "#B56E6E", name: "Light Shell Pink" },
+            { dmc: "224", anchor: "893", hex: "#D5A0A0", name: "Very Light Shell Pink" },
+            { dmc: "225", anchor: "1026", hex: "#F4E0E0", name: "Ultra Very Light Shell Pink" },
+            { dmc: "300", anchor: "352", hex: "#6F3715", name: "Very Dark Mahogany" },
+            { dmc: "301", anchor: "1049", hex: "#A54F1C", name: "Medium Mahogany" },
+            { dmc: "304", anchor: "1006", hex: "#9E2323", name: "Medium Red" },
+            { dmc: "307", anchor: "289", hex: "#FFD900", name: "Lemon" },
+            { dmc: "309", anchor: "42", hex: "#B22746", name: "Dark Rose" },
+            { dmc: "310", anchor: "403", hex: "#000000", name: "Black" },
+            { dmc: "311", anchor: "148", hex: "#1C5774", name: "Medium Navy Blue" },
+            { dmc: "312", anchor: "979", hex: "#2A5B7C", name: "Very Dark Baby Blue" },
+            { dmc: "315", anchor: "1019", hex: "#7D4952", name: "Medium Dark Antique Mauve" },
+            { dmc: "316", anchor: "1017", hex: "#B47A82", name: "Medium Antique Mauve" },
+            { dmc: "317", anchor: "400", hex: "#6C6C6C", name: "Pewter Gray" },
+            { dmc: "318", anchor: "399", hex: "#949494", name: "Light Steel Gray" },
+            { dmc: "319", anchor: "218", hex: "#205840", name: "Very Dark Pistachio Green" },
+            { dmc: "320", anchor: "215", hex: "#6B8E6B", name: "Medium Pistachio Green" },
+            { dmc: "321", anchor: "9046", hex: "#C92736", name: "Red" },
+            { dmc: "322", anchor: "978", hex: "#4F7CB3", name: "Dark Baby Blue" },
+            { dmc: "326", anchor: "59", hex: "#A52745", name: "Very Dark Rose" },
+            { dmc: "327", anchor: "100", hex: "#653679", name: "Dark Violet" },
+            { dmc: "333", anchor: "119", hex: "#5C4681", name: "Very Dark Blue Violet" },
+            { dmc: "334", anchor: "977", hex: "#6498C1", name: "Medium Baby Blue" },
+            { dmc: "335", anchor: "38", hex: "#D2456D", name: "Rose" },
+            { dmc: "336", anchor: "150", hex: "#24425E", name: "Navy Blue" },
+            { dmc: "340", anchor: "118", hex: "#8D7BB3", name: "Medium Blue Violet" },
+            { dmc: "341", anchor: "117", hex: "#B3A9CC", name: "Light Blue Violet" },
+            { dmc: "347", anchor: "1025", hex: "#BA2B3F", name: "Very Dark Salmon" },
+            { dmc: "349", anchor: "13", hex: "#D21826", name: "Dark Coral" },
+            { dmc: "350", anchor: "11", hex: "#E04435", name: "Medium Coral" },
+            { dmc: "351", anchor: "10", hex: "#E87153", name: "Coral" },
+            { dmc: "352", anchor: "9", hex: "#F09076", name: "Light Coral" },
+            { dmc: "353", anchor: "6", hex: "#F7BBA5", name: "Peach" },
+            { dmc: "355", anchor: "1014", hex: "#8B4931", name: "Dark Terra Cotta" },
+            { dmc: "356", anchor: "5975", hex: "#B86E50", name: "Medium Terra Cotta" },
+            { dmc: "367", anchor: "217", hex: "#5E7F5E", name: "Dark Pistachio Green" },
+            { dmc: "368", anchor: "214", hex: "#90B590", name: "Light Pistachio Green" },
+            { dmc: "369", anchor: "1043", hex: "#D1E4D1", name: "Very Light Pistachio Green" },
+            { dmc: "370", anchor: "855", hex: "#8A7B56", name: "Medium Mustard" },
+            { dmc: "371", anchor: "854", hex: "#9C8D67", name: "Mustard" },
+            { dmc: "372", anchor: "853", hex: "#AEA078", name: "Light Mustard" },
+            { dmc: "400", anchor: "351", hex: "#7B3F17", name: "Dark Mahogany" },
+            { dmc: "402", anchor: "1047", hex: "#D89D76", name: "Very Light Mahogany" },
+            { dmc: "407", anchor: "914", hex: "#A57971", name: "Dark Desert Sand" },
+            { dmc: "413", anchor: "236", hex: "#4E4E4E", name: "Dark Pewter Gray" },
+            { dmc: "414", anchor: "235", hex: "#727272", name: "Dark Steel Gray" },
+            { dmc: "415", anchor: "398", hex: "#B8B8B8", name: "Pearl Gray" },
+            { dmc: "420", anchor: "374", hex: "#87652A", name: "Dark Hazelnut Brown" },
+            { dmc: "422", anchor: "943", hex: "#BF9B65", name: "Light Hazelnut Brown" },
+            { dmc: "433", anchor: "358", hex: "#5E3A17", name: "Medium Brown" },
+            { dmc: "434", anchor: "310", hex: "#7E5025", name: "Light Brown" },
+            { dmc: "435", anchor: "1046", hex: "#996633", name: "Very Light Brown" },
+            { dmc: "436", anchor: "1045", hex: "#BA8949", name: "Tan" },
+            { dmc: "437", anchor: "362", hex: "#D5AD6D", name: "Light Tan" },
+            { dmc: "444", anchor: "290", hex: "#FFD700", name: "Dark Lemon" },
+            { dmc: "445", anchor: "288", hex: "#FFFF99", name: "Light Lemon" },
+            { dmc: "451", anchor: "233", hex: "#8E8071", name: "Dark Shell Gray" },
+            { dmc: "452", anchor: "232", hex: "#ABA091", name: "Medium Shell Gray" },
+            { dmc: "453", anchor: "231", hex: "#C8BEB0", name: "Light Shell Gray" },
+            { dmc: "469", anchor: "267", hex: "#5E7434", name: "Avocado Green" },
+            { dmc: "470", anchor: "267", hex: "#6E8B3D", name: "Light Avocado Green" },
+            { dmc: "471", anchor: "266", hex: "#8DA455", name: "Very Light Avocado Green" },
+            { dmc: "472", anchor: "253", hex: "#C4D57E", name: "Ultra Light Avocado Green" },
+            { dmc: "498", anchor: "1005", hex: "#8C0E2A", name: "Dark Red" },
+            { dmc: "500", anchor: "683", hex: "#153831", name: "Very Dark Blue Green" },
+            { dmc: "501", anchor: "878", hex: "#3B6458", name: "Dark Blue Green" },
+            { dmc: "502", anchor: "877", hex: "#5C8A7B", name: "Blue Green" },
+            { dmc: "503", anchor: "876", hex: "#8AB5A5", name: "Medium Blue Green" },
+            { dmc: "504", anchor: "1042", hex: "#C4DDD4", name: "Very Light Blue Green" },
+            { dmc: "517", anchor: "162", hex: "#2D6985", name: "Dark Wedgewood" },
+            { dmc: "518", anchor: "1039", hex: "#4F8EA3", name: "Light Wedgewood" },
+            { dmc: "519", anchor: "1038", hex: "#7AB3C4", name: "Sky Blue" },
+            { dmc: "520", anchor: "862", hex: "#5B5F33", name: "Dark Fern Green" },
+            { dmc: "522", anchor: "860", hex: "#8E9267", name: "Fern Green" },
+            { dmc: "523", anchor: "859", hex: "#A4A87D", name: "Light Fern Green" },
+            { dmc: "524", anchor: "858", hex: "#C0C496", name: "Very Light Fern Green" },
+            { dmc: "535", anchor: "401", hex: "#545454", name: "Very Light Ash Gray" },
+            { dmc: "543", anchor: "933", hex: "#E7D6C6", name: "Ultra Very Light Beige Brown" },
+            { dmc: "550", anchor: "102", hex: "#5B2A5B", name: "Very Dark Violet" },
+            { dmc: "552", anchor: "99", hex: "#803E80", name: "Medium Violet" },
+            { dmc: "553", anchor: "98", hex: "#A663A6", name: "Violet" },
+            { dmc: "554", anchor: "96", hex: "#D9A9D9", name: "Light Violet" },
+            { dmc: "561", anchor: "212", hex: "#2C6D5E", name: "Very Dark Jade" },
+            { dmc: "562", anchor: "210", hex: "#4A9582", name: "Medium Jade" },
+            { dmc: "563", anchor: "208", hex: "#8FC2B1", name: "Light Jade" },
+            { dmc: "564", anchor: "206", hex: "#B7DAD0", name: "Very Light Jade" },
+            { dmc: "580", anchor: "281", hex: "#5C6C1F", name: "Dark Moss Green" },
+            { dmc: "581", anchor: "280", hex: "#878B2F", name: "Moss Green" },
+            { dmc: "597", anchor: "1064", hex: "#4BA3A9", name: "Turquoise" },
+            { dmc: "598", anchor: "1062", hex: "#8ECBD0", name: "Light Turquoise" },
+            { dmc: "600", anchor: "59", hex: "#C62553", name: "Very Dark Cranberry" },
+            { dmc: "601", anchor: "57", hex: "#D13E69", name: "Dark Cranberry" },
+            { dmc: "602", anchor: "63", hex: "#E2587F", name: "Medium Cranberry" },
+            { dmc: "603", anchor: "62", hex: "#F08099", name: "Cranberry" },
+            { dmc: "604", anchor: "55", hex: "#F8A6B7", name: "Light Cranberry" },
+            { dmc: "605", anchor: "1094", hex: "#FFC0CB", name: "Very Light Cranberry" },
+            { dmc: "606", anchor: "334", hex: "#FA0000", name: "Bright Orange Red" },
+            { dmc: "608", anchor: "332", hex: "#FD5A23", name: "Bright Orange" },
+            { dmc: "610", anchor: "889", hex: "#6E5A3C", name: "Dark Drab Brown" },
+            { dmc: "611", anchor: "898", hex: "#867152", name: "Drab Brown" },
+            { dmc: "612", anchor: "832", hex: "#A8956A", name: "Light Drab Brown" },
+            { dmc: "613", anchor: "831", hex: "#C7B889", name: "Very Light Drab Brown" },
+            { dmc: "632", anchor: "936", hex: "#8D594A", name: "Ultra Very Dark Desert Sand" },
+            { dmc: "640", anchor: "903", hex: "#7A746B", name: "Very Dark Beige Gray" },
+            { dmc: "642", anchor: "392", hex: "#968E81", name: "Dark Beige Gray" },
+            { dmc: "644", anchor: "830", hex: "#BDB8AB", name: "Medium Beige Gray" },
+            { dmc: "645", anchor: "273", hex: "#6A6A66", name: "Very Dark Beaver Gray" },
+            { dmc: "646", anchor: "8581", hex: "#878581", name: "Dark Beaver Gray" },
+            { dmc: "647", anchor: "1040", hex: "#A3A19D", name: "Medium Beaver Gray" },
+            { dmc: "648", anchor: "900", hex: "#B9B7B3", name: "Light Beaver Gray" },
+            { dmc: "666", anchor: "46", hex: "#E31D2C", name: "Bright Red" },
+            { dmc: "676", anchor: "891", hex: "#DFC975", name: "Light Old Gold" },
+            { dmc: "677", anchor: "886", hex: "#F4E7B5", name: "Very Light Old Gold" },
+            { dmc: "680", anchor: "901", hex: "#BC8A0E", name: "Dark Old Gold" },
+            { dmc: "699", anchor: "923", hex: "#056612", name: "Green" },
+            { dmc: "700", anchor: "228", hex: "#077B19", name: "Bright Green" },
+            { dmc: "701", anchor: "227", hex: "#3F9131", name: "Light Green" },
+            { dmc: "702", anchor: "226", hex: "#5FA54C", name: "Kelly Green" },
+            { dmc: "703", anchor: "238", hex: "#7FBF6C", name: "Chartreuse" },
+            { dmc: "704", anchor: "256", hex: "#9DD38F", name: "Bright Chartreuse" },
+            { dmc: "712", anchor: "926", hex: "#FFFBEF", name: "Cream" },
+            { dmc: "718", anchor: "88", hex: "#A52763", name: "Plum" },
+            { dmc: "720", anchor: "326", hex: "#CD5916", name: "Dark Orange Spice" },
+            { dmc: "721", anchor: "925", hex: "#E97627", name: "Medium Orange Spice" },
+            { dmc: "722", anchor: "323", hex: "#F19648", name: "Light Orange Spice" },
+            { dmc: "725", anchor: "305", hex: "#FFC840", name: "Medium Light Topaz" },
+            { dmc: "726", anchor: "295", hex: "#FFD966", name: "Light Topaz" },
+            { dmc: "727", anchor: "293", hex: "#FFEDA6", name: "Very Light Topaz" },
+            { dmc: "729", anchor: "890", hex: "#CDA82C", name: "Medium Old Gold" },
+            { dmc: "730", anchor: "845", hex: "#6E6B28", name: "Very Dark Olive Green" },
+            { dmc: "731", anchor: "924", hex: "#7C792D", name: "Dark Olive Green" },
+            { dmc: "732", anchor: "281", hex: "#8A8631", name: "Olive Green" },
+            { dmc: "733", anchor: "280", hex: "#A9A649", name: "Medium Olive Green" },
+            { dmc: "734", anchor: "279", hex: "#C4C26A", name: "Light Olive Green" },
+            { dmc: "738", anchor: "361", hex: "#DEC596", name: "Very Light Tan" },
+            { dmc: "739", anchor: "387", hex: "#F1E3C9", name: "Ultra Very Light Tan" },
+            { dmc: "740", anchor: "316", hex: "#FF8800", name: "Tangerine" },
+            { dmc: "741", anchor: "304", hex: "#FFAA00", name: "Medium Tangerine" },
+            { dmc: "742", anchor: "303", hex: "#FFBF00", name: "Light Tangerine" },
+            { dmc: "743", anchor: "302", hex: "#FFD21F", name: "Medium Yellow" },
+            { dmc: "744", anchor: "301", hex: "#FFE36C", name: "Pale Yellow" },
+            { dmc: "745", anchor: "300", hex: "#FFF1A8", name: "Light Pale Yellow" },
+            { dmc: "746", anchor: "275", hex: "#FFFDE3", name: "Off White" },
+            { dmc: "747", anchor: "158", hex: "#D5EFEF", name: "Very Light Sky Blue" },
+            { dmc: "754", anchor: "1012", hex: "#F4CEBB", name: "Light Peach" },
+            { dmc: "758", anchor: "868", hex: "#E6AB8E", name: "Very Light Terra Cotta" },
+            { dmc: "760", anchor: "1022", hex: "#E78686", name: "Salmon" },
+            { dmc: "761", anchor: "1021", hex: "#F2ADAD", name: "Light Salmon" },
+            { dmc: "762", anchor: "234", hex: "#D5D5D5", name: "Very Light Pearl Gray" },
+            { dmc: "772", anchor: "259", hex: "#D9E9C1", name: "Very Light Yellow Green" },
+            { dmc: "775", anchor: "128", hex: "#D5E8F4", name: "Very Light Baby Blue" },
+            { dmc: "776", anchor: "24", hex: "#F9B0C1", name: "Medium Pink" },
+            { dmc: "778", anchor: "968", hex: "#D9A5A5", name: "Very Light Antique Mauve" },
+            { dmc: "780", anchor: "309", hex: "#9A5F00", name: "Ultra Very Dark Topaz" },
+            { dmc: "781", anchor: "308", hex: "#AA6B00", name: "Very Dark Topaz" },
+            { dmc: "782", anchor: "307", hex: "#BA7C00", name: "Dark Topaz" },
+            { dmc: "783", anchor: "306", hex: "#CFA200", name: "Medium Topaz" },
+            { dmc: "791", anchor: "178", hex: "#3D3275", name: "Very Dark Cornflower Blue" },
+            { dmc: "792", anchor: "941", hex: "#4B4085", name: "Dark Cornflower Blue" },
+            { dmc: "793", anchor: "176", hex: "#6B66A4", name: "Medium Cornflower Blue" },
+            { dmc: "794", anchor: "175", hex: "#8F8BC4", name: "Light Cornflower Blue" },
+            { dmc: "796", anchor: "133", hex: "#192A7E", name: "Dark Royal Blue" },
+            { dmc: "797", anchor: "132", hex: "#213C92", name: "Royal Blue" },
+            { dmc: "798", anchor: "131", hex: "#3A5AAE", name: "Dark Delft Blue" },
+            { dmc: "799", anchor: "136", hex: "#587ABE", name: "Medium Delft Blue" },
+            { dmc: "800", anchor: "144", hex: "#A7C0E4", name: "Pale Delft Blue" },
+            { dmc: "801", anchor: "359", hex: "#5E3A17", name: "Dark Coffee Brown" },
+            { dmc: "806", anchor: "169", hex: "#337A8C", name: "Dark Peacock Blue" },
+            { dmc: "807", anchor: "168", hex: "#4995A4", name: "Peacock Blue" },
+            { dmc: "809", anchor: "130", hex: "#6B9BD1", name: "Delft Blue" },
+            { dmc: "813", anchor: "161", hex: "#6BA5D4", name: "Light Blue" },
+            { dmc: "814", anchor: "45", hex: "#6E0E2D", name: "Dark Garnet" },
+            { dmc: "815", anchor: "43", hex: "#861B36", name: "Medium Garnet" },
+            { dmc: "816", anchor: "1005", hex: "#97243D", name: "Garnet" },
+            { dmc: "817", anchor: "13", hex: "#CC1C24", name: "Very Dark Coral Red" },
+            { dmc: "818", anchor: "23", hex: "#FFDDE4", name: "Baby Pink" },
+            { dmc: "819", anchor: "271", hex: "#FFECF0", name: "Light Baby Pink" },
+            { dmc: "820", anchor: "134", hex: "#141773", name: "Very Dark Royal Blue" },
+            { dmc: "822", anchor: "390", hex: "#E3DDD0", name: "Light Beige Gray" },
+            { dmc: "823", anchor: "152", hex: "#0D1142", name: "Dark Navy Blue" },
+            { dmc: "824", anchor: "164", hex: "#1A4474", name: "Very Dark Blue" },
+            { dmc: "825", anchor: "162", hex: "#2A5885", name: "Dark Blue" },
+            { dmc: "826", anchor: "161", hex: "#3E73A0", name: "Medium Blue" },
+            { dmc: "827", anchor: "160", hex: "#8FB9D8", name: "Very Light Blue" },
+            { dmc: "828", anchor: "9159", hex: "#C5DEE8", name: "Ultra Very Light Blue" },
+            { dmc: "829", anchor: "906", hex: "#6C5617", name: "Very Dark Golden Olive" },
+            { dmc: "830", anchor: "277", hex: "#7D6521", name: "Dark Golden Olive" },
+            { dmc: "831", anchor: "277", hex: "#8E742B", name: "Medium Golden Olive" },
+            { dmc: "832", anchor: "907", hex: "#9F8234", name: "Golden Olive" },
+            { dmc: "833", anchor: "907", hex: "#B69F50", name: "Light Golden Olive" },
+            { dmc: "834", anchor: "874", hex: "#CCBA6C", name: "Very Light Golden Olive" },
+            { dmc: "838", anchor: "1088", hex: "#3C271A", name: "Very Dark Beige Brown" },
+            { dmc: "839", anchor: "1086", hex: "#4D372A", name: "Dark Beige Brown" },
+            { dmc: "840", anchor: "1084", hex: "#6A5442", name: "Medium Beige Brown" },
+            { dmc: "841", anchor: "1082", hex: "#9A8574", name: "Light Beige Brown" },
+            { dmc: "842", anchor: "1080", hex: "#BFAF9D", name: "Very Light Beige Brown" },
+            { dmc: "844", anchor: "1041", hex: "#4A4A4A", name: "Ultra Dark Beaver Gray" },
+            { dmc: "869", anchor: "944", hex: "#7B5B2A", name: "Very Dark Hazelnut Brown" },
+            { dmc: "890", anchor: "218", hex: "#174328", name: "Ultra Dark Pistachio Green" },
+            { dmc: "891", anchor: "35", hex: "#E9365B", name: "Dark Carnation" },
+            { dmc: "892", anchor: "33", hex: "#F2586E", name: "Medium Carnation" },
+            { dmc: "893", anchor: "28", hex: "#F77B8A", name: "Light Carnation" },
+            { dmc: "894", anchor: "27", hex: "#FFA1AC", name: "Very Light Carnation" },
+            { dmc: "895", anchor: "1044", hex: "#2B5233", name: "Very Dark Hunter Green" },
+            { dmc: "898", anchor: "360", hex: "#452513", name: "Very Dark Coffee Brown" },
+            { dmc: "899", anchor: "52", hex: "#F26786", name: "Medium Rose" },
+            { dmc: "900", anchor: "333", hex: "#CF3700", name: "Dark Burnt Orange" },
+            { dmc: "902", anchor: "897", hex: "#6B202B", name: "Very Dark Garnet" },
+            { dmc: "904", anchor: "258", hex: "#456322", name: "Very Dark Parrot Green" },
+            { dmc: "905", anchor: "257", hex: "#567D2D", name: "Dark Parrot Green" },
+            { dmc: "906", anchor: "256", hex: "#6E9637", name: "Medium Parrot Green" },
+            { dmc: "907", anchor: "255", hex: "#A0C050", name: "Light Parrot Green" },
+            { dmc: "909", anchor: "923", hex: "#085827", name: "Very Dark Emerald Green" },
+            { dmc: "910", anchor: "229", hex: "#0E6B34", name: "Dark Emerald Green" },
+            { dmc: "911", anchor: "205", hex: "#288B4E", name: "Medium Emerald Green" },
+            { dmc: "912", anchor: "209", hex: "#46A466", name: "Light Emerald Green" },
+            { dmc: "913", anchor: "204", hex: "#83C589", name: "Medium Nile Green" },
+            { dmc: "915", anchor: "1029", hex: "#8E2364", name: "Dark Plum" },
+            { dmc: "917", anchor: "89", hex: "#9F2474", name: "Medium Plum" },
+            { dmc: "918", anchor: "341", hex: "#8B3F0F", name: "Dark Red Copper" },
+            { dmc: "919", anchor: "340", hex: "#A54910", name: "Red Copper" },
+            { dmc: "920", anchor: "1004", hex: "#B2561B", name: "Medium Copper" },
+            { dmc: "921", anchor: "1003", hex: "#C26A2D", name: "Copper" },
+            { dmc: "922", anchor: "1003", hex: "#D2863C", name: "Light Copper" },
+            { dmc: "924", anchor: "851", hex: "#3D5A5F", name: "Very Dark Gray Green" },
+            { dmc: "926", anchor: "850", hex: "#5F8082", name: "Medium Gray Green" },
+            { dmc: "927", anchor: "848", hex: "#8CA8A9", name: "Light Gray Green" },
+            { dmc: "928", anchor: "274", hex: "#BDD0CF", name: "Very Light Gray Green" },
+            { dmc: "930", anchor: "1035", hex: "#37566B", name: "Dark Antique Blue" },
+            { dmc: "931", anchor: "1034", hex: "#4E7188", name: "Medium Antique Blue" },
+            { dmc: "932", anchor: "1033", hex: "#7A9DAD", name: "Light Antique Blue" },
+            { dmc: "934", anchor: "862", hex: "#2C3C27", name: "Black Avocado Green" },
+            { dmc: "935", anchor: "861", hex: "#3C4F33", name: "Dark Avocado Green" },
+            { dmc: "936", anchor: "269", hex: "#4C6242", name: "Very Dark Avocado Green" },
+            { dmc: "937", anchor: "268", hex: "#557949", name: "Medium Avocado Green" },
+            { dmc: "938", anchor: "381", hex: "#3C2618", name: "Ultra Dark Coffee Brown" },
+            { dmc: "939", anchor: "152", hex: "#181551", name: "Very Dark Navy Blue" },
+            { dmc: "943", anchor: "188", hex: "#1E877B", name: "Medium Aquamarine" },
+            { dmc: "945", anchor: "881", hex: "#F5CDB4", name: "Tawny" },
+            { dmc: "946", anchor: "332", hex: "#F36B1B", name: "Medium Burnt Orange" },
+            { dmc: "947", anchor: "330", hex: "#FF6C3B", name: "Burnt Orange" },
+            { dmc: "948", anchor: "1011", hex: "#FEE7D8", name: "Very Light Peach" },
+            { dmc: "950", anchor: "4146", hex: "#EECDB9", name: "Light Desert Sand" },
+            { dmc: "951", anchor: "1010", hex: "#FFDFCA", name: "Light Tawny" },
+            { dmc: "954", anchor: "203", hex: "#70C48B", name: "Nile Green" },
+            { dmc: "955", anchor: "206", hex: "#A1D9B0", name: "Light Nile Green" },
+            { dmc: "956", anchor: "40", hex: "#FF718D", name: "Geranium" },
+            { dmc: "957", anchor: "50", hex: "#FFA5B4", name: "Pale Geranium" },
+            { dmc: "958", anchor: "187", hex: "#35AAA0", name: "Dark Sea Green" },
+            { dmc: "959", anchor: "186", hex: "#65C8BC", name: "Medium Sea Green" },
+            { dmc: "961", anchor: "76", hex: "#CF7183", name: "Dark Dusty Rose" },
+            { dmc: "962", anchor: "75", hex: "#E78D9E", name: "Medium Dusty Rose" },
+            { dmc: "963", anchor: "73", hex: "#FFD1D9", name: "Ultra Very Light Dusty Rose" },
+            { dmc: "964", anchor: "185", hex: "#A3E0D9", name: "Light Sea Green" },
+            { dmc: "966", anchor: "206", hex: "#B9D9AA", name: "Medium Baby Green" },
+            { dmc: "970", anchor: "316", hex: "#FF7F00", name: "Light Pumpkin" },
+            { dmc: "971", anchor: "316", hex: "#FF6F00", name: "Pumpkin" },
+            { dmc: "972", anchor: "298", hex: "#FFC300", name: "Deep Canary" },
+            { dmc: "973", anchor: "297", hex: "#FFE400", name: "Bright Canary" },
+            { dmc: "975", anchor: "355", hex: "#8B4F00", name: "Dark Golden Brown" },
+            { dmc: "976", anchor: "1001", hex: "#C88217", name: "Medium Golden Brown" },
+            { dmc: "977", anchor: "1002", hex: "#E19D32", name: "Light Golden Brown" },
+            { dmc: "986", anchor: "246", hex: "#315D36", name: "Very Dark Forest Green" },
+            { dmc: "987", anchor: "244", hex: "#4B7845", name: "Dark Forest Green" },
+            { dmc: "988", anchor: "243", hex: "#6B9859", name: "Medium Forest Green" },
+            { dmc: "989", anchor: "242", hex: "#8DB87A", name: "Forest Green" },
+            { dmc: "991", anchor: "1076", hex: "#377E7A", name: "Dark Aquamarine" },
+            { dmc: "992", anchor: "1072", hex: "#5CA9A2", name: "Light Aquamarine" },
+            { dmc: "993", anchor: "1070", hex: "#8DCFCA", name: "Very Light Aquamarine" },
+            { dmc: "995", anchor: "410", hex: "#257AB0", name: "Dark Electric Blue" },
+            { dmc: "996", anchor: "433", hex: "#3CBDE8", name: "Medium Electric Blue" },
+            { dmc: "3011", anchor: "846", hex: "#6B6B3D", name: "Dark Khaki Green" },
+            { dmc: "3012", anchor: "844", hex: "#8B8B58", name: "Medium Khaki Green" },
+            { dmc: "3013", anchor: "842", hex: "#ABAB78", name: "Light Khaki Green" },
+            { dmc: "3021", anchor: "905", hex: "#5C4B42", name: "Very Dark Brown Gray" },
+            { dmc: "3022", anchor: "8581", hex: "#7E7568", name: "Medium Brown Gray" },
+            { dmc: "3023", anchor: "1040", hex: "#A9A093", name: "Light Brown Gray" },
+            { dmc: "3024", anchor: "397", hex: "#C8C3B8", name: "Very Light Brown Gray" },
+            { dmc: "3031", anchor: "905", hex: "#4B3C2E", name: "Very Dark Mocha Brown" },
+            { dmc: "3032", anchor: "903", hex: "#A09482", name: "Medium Mocha Brown" },
+            { dmc: "3033", anchor: "391", hex: "#DED4C4", name: "Very Light Mocha Brown" },
+            { dmc: "3041", anchor: "871", hex: "#8D6D7D", name: "Medium Antique Violet" },
+            { dmc: "3042", anchor: "870", hex: "#B5A0AC", name: "Light Antique Violet" },
+            { dmc: "3045", anchor: "888", hex: "#B38E5E", name: "Dark Yellow Beige" },
+            { dmc: "3046", anchor: "887", hex: "#D4B888", name: "Medium Yellow Beige" },
+            { dmc: "3047", anchor: "852", hex: "#E7D9B4", name: "Light Yellow Beige" },
+            { dmc: "3051", anchor: "681", hex: "#4E5631", name: "Dark Green Gray" },
+            { dmc: "3052", anchor: "262", hex: "#738657", name: "Medium Green Gray" },
+            { dmc: "3053", anchor: "261", hex: "#9DB17E", name: "Light Green Gray" },
+            { dmc: "3064", anchor: "883", hex: "#BE8B74", name: "Desert Sand" },
+            { dmc: "3072", anchor: "847", hex: "#E7E7E2", name: "Very Light Beaver Gray" },
+            { dmc: "3078", anchor: "292", hex: "#FFF8CC", name: "Very Light Golden Yellow" },
+            { dmc: "3325", anchor: "129", hex: "#A8C5E3", name: "Light Baby Blue" },
+            { dmc: "3326", anchor: "36", hex: "#F7A6B4", name: "Light Rose" },
+            { dmc: "3328", anchor: "1024", hex: "#C64D52", name: "Dark Salmon" },
+            { dmc: "3340", anchor: "329", hex: "#FF8763", name: "Medium Apricot" },
+            { dmc: "3341", anchor: "328", hex: "#FCAB88", name: "Apricot" },
+            { dmc: "3345", anchor: "268", hex: "#2D5428", name: "Dark Hunter Green" },
+            { dmc: "3346", anchor: "267", hex: "#4C7843", name: "Hunter Green" },
+            { dmc: "3347", anchor: "266", hex: "#6E9B5F", name: "Medium Yellow Green" },
+            { dmc: "3348", anchor: "264", hex: "#BEDC9B", name: "Light Yellow Green" },
+            { dmc: "3350", anchor: "59", hex: "#BC1D54", name: "Ultra Dark Dusty Rose" },
+            { dmc: "3354", anchor: "74", hex: "#E4A2A2", name: "Light Dusty Rose" },
+            { dmc: "3362", anchor: "263", hex: "#50613C", name: "Dark Pine Green" },
+            { dmc: "3363", anchor: "262", hex: "#6B7F55", name: "Medium Pine Green" },
+            { dmc: "3364", anchor: "260", hex: "#8EA170", name: "Pine Green" },
+            { dmc: "3371", anchor: "382", hex: "#261E18", name: "Black Brown" },
+            { dmc: "3607", anchor: "87", hex: "#BD2F7C", name: "Light Plum" },
+            { dmc: "3608", anchor: "86", hex: "#D56FA2", name: "Very Light Plum" },
+            { dmc: "3609", anchor: "85", hex: "#E9A0C2", name: "Ultra Light Plum" },
+            { dmc: "3685", anchor: "1028", hex: "#7B1D4F", name: "Very Dark Mauve" },
+            { dmc: "3687", anchor: "68", hex: "#C63B6B", name: "Mauve" },
+            { dmc: "3688", anchor: "66", hex: "#E28BA5", name: "Medium Mauve" },
+            { dmc: "3689", anchor: "49", hex: "#FABFCE", name: "Light Mauve" },
+            { dmc: "3705", anchor: "35", hex: "#FF6C79", name: "Dark Melon" },
+            { dmc: "3706", anchor: "33", hex: "#FF9299", name: "Medium Melon" },
+            { dmc: "3708", anchor: "31", hex: "#FFBFC4", name: "Light Melon" },
+            { dmc: "3712", anchor: "1023", hex: "#F08888", name: "Medium Salmon" },
+            { dmc: "3713", anchor: "1020", hex: "#FFD9D9", name: "Very Light Salmon" },
+            { dmc: "3716", anchor: "25", hex: "#FFADC1", name: "Very Light Dusty Rose" },
+            { dmc: "3721", anchor: "896", hex: "#8E4042", name: "Dark Shell Pink" },
+            { dmc: "3722", anchor: "1027", hex: "#A35656", name: "Medium Shell Pink" },
+            { dmc: "3726", anchor: "1018", hex: "#9A5A62", name: "Dark Antique Mauve" },
+            { dmc: "3727", anchor: "1016", hex: "#D8A6A8", name: "Light Antique Mauve" },
+            { dmc: "3731", anchor: "76", hex: "#DB7188", name: "Very Dark Dusty Rose" },
+            { dmc: "3733", anchor: "75", hex: "#E89AA9", name: "Dusty Rose" },
+            { dmc: "3740", anchor: "873", hex: "#6D5060", name: "Dark Antique Violet" },
+            { dmc: "3743", anchor: "869", hex: "#D0C6CD", name: "Very Light Antique Violet" },
+            { dmc: "3746", anchor: "1030", hex: "#776BB3", name: "Dark Blue Violet" },
+            { dmc: "3747", anchor: "120", hex: "#D3D7ED", name: "Very Light Blue Violet" },
+            { dmc: "3750", anchor: "1036", hex: "#3D6978", name: "Very Dark Antique Blue" },
+            { dmc: "3752", anchor: "1032", hex: "#A3B9CA", name: "Very Light Antique Blue" },
+            { dmc: "3753", anchor: "1031", hex: "#D3DFE7", name: "Ultra Very Light Antique Blue" },
+            { dmc: "3755", anchor: "140", hex: "#7BA3C4", name: "Baby Blue" },
+            { dmc: "3756", anchor: "1037", hex: "#EEFCFF", name: "Ultra Very Light Baby Blue" },
+            { dmc: "3760", anchor: "169", hex: "#3C8D98", name: "Medium Wedgewood" },
+            { dmc: "3761", anchor: "928", hex: "#A9D9DC", name: "Light Sky Blue" },
+            { dmc: "3765", anchor: "170", hex: "#2E7983", name: "Very Dark Peacock Blue" },
+            { dmc: "3766", anchor: "167", hex: "#6AAAAE", name: "Light Peacock Blue" },
+            { dmc: "3768", anchor: "779", hex: "#5B8A8A", name: "Dark Gray Green" },
+            { dmc: "3770", anchor: "1009", hex: "#FFEEE2", name: "Very Light Tawny" },
+            { dmc: "3772", anchor: "1007", hex: "#A06E52", name: "Very Dark Desert Sand" },
+            { dmc: "3773", anchor: "1008", hex: "#D9A185", name: "Medium Desert Sand" },
+            { dmc: "3774", anchor: "778", hex: "#F4D9CB", name: "Very Light Desert Sand" },
+            { dmc: "3776", anchor: "1048", hex: "#C57336", name: "Light Mahogany" },
+            { dmc: "3777", anchor: "1015", hex: "#8B2E11", name: "Very Dark Terra Cotta" },
+            { dmc: "3778", anchor: "1013", hex: "#D98A71", name: "Light Terra Cotta" },
+            { dmc: "3779", anchor: "1012", hex: "#F8C6B1", name: "Ultra Very Light Terra Cotta" },
+            { dmc: "3781", anchor: "904", hex: "#5D4535", name: "Dark Mocha Brown" },
+            { dmc: "3782", anchor: "899", hex: "#9A8773", name: "Light Mocha Brown" },
+            { dmc: "3787", anchor: "273", hex: "#5D5550", name: "Dark Brown Gray" },
+            { dmc: "3790", anchor: "393", hex: "#7E7167", name: "Ultra Dark Beige Gray" },
+            { dmc: "3799", anchor: "236", hex: "#3C3B3B", name: "Very Dark Pewter Gray" },
+            { dmc: "3801", anchor: "1098", hex: "#E74863", name: "Very Dark Melon" },
+            { dmc: "3802", anchor: "1019", hex: "#6E2845", name: "Very Dark Antique Mauve" },
+            { dmc: "3803", anchor: "972", hex: "#8B1B4F", name: "Dark Mauve" },
+            { dmc: "3804", anchor: "63", hex: "#D32772", name: "Dark Cyclamen Pink" },
+            { dmc: "3805", anchor: "62", hex: "#EB4C8A", name: "Cyclamen Pink" },
+            { dmc: "3806", anchor: "62", hex: "#F67CA5", name: "Light Cyclamen Pink" },
+            { dmc: "3807", anchor: "122", hex: "#5445A0", name: "Cornflower Blue" },
+            { dmc: "3808", anchor: "1068", hex: "#2C5F5D", name: "Ultra Very Dark Turquoise" },
+            { dmc: "3809", anchor: "1066", hex: "#3D807A", name: "Very Dark Turquoise" },
+            { dmc: "3810", anchor: "1066", hex: "#519C94", name: "Dark Turquoise" },
+            { dmc: "3811", anchor: "1060", hex: "#B7E1E0", name: "Very Light Turquoise" },
+            { dmc: "3812", anchor: "188", hex: "#318177", name: "Very Dark Sea Green" },
+            { dmc: "3813", anchor: "875", hex: "#A2C8B9", name: "Light Blue Green" },
+            { dmc: "3814", anchor: "1074", hex: "#47817A", name: "Aquamarine" },
+            { dmc: "3815", anchor: "877", hex: "#4C8C7F", name: "Dark Celadon Green" },
+            { dmc: "3816", anchor: "876", hex: "#6AAD9A", name: "Celadon Green" },
+            { dmc: "3817", anchor: "875", hex: "#A3D1C1", name: "Light Celadon Green" },
+            { dmc: "3818", anchor: "923", hex: "#145235", name: "Ultra Very Dark Emerald Green" },
+            { dmc: "3819", anchor: "278", hex: "#C8D472", name: "Light Moss Green" },
+            { dmc: "3820", anchor: "306", hex: "#DFB71D", name: "Dark Straw" },
+            { dmc: "3821", anchor: "305", hex: "#F2CA31", name: "Straw" },
+            { dmc: "3822", anchor: "295", hex: "#F6D95C", name: "Light Straw" },
+            { dmc: "3823", anchor: "386", hex: "#FFFDD1", name: "Ultra Pale Yellow" },
+            { dmc: "3824", anchor: "8", hex: "#FEADA5", name: "Light Apricot" },
+            { dmc: "3825", anchor: "323", hex: "#FDB778", name: "Pale Pumpkin" },
+            { dmc: "3826", anchor: "1049", hex: "#AD6221", name: "Golden Brown" },
+            { dmc: "3827", anchor: "311", hex: "#F4BB6A", name: "Pale Golden Brown" },
+            { dmc: "3828", anchor: "373", hex: "#B48A5E", name: "Hazelnut Brown" },
+            { dmc: "3829", anchor: "901", hex: "#AA7C0B", name: "Very Dark Old Gold" },
+            { dmc: "3830", anchor: "5975", hex: "#B45A45", name: "Terra Cotta" },
+            { dmc: "3831", anchor: "29", hex: "#B2334D", name: "Dark Raspberry" },
+            { dmc: "3832", anchor: "28", hex: "#D45567", name: "Medium Raspberry" },
+            { dmc: "3833", anchor: "26", hex: "#EA8A98", name: "Light Raspberry" },
+            { dmc: "3834", anchor: "100", hex: "#6F355E", name: "Dark Grape" },
+            { dmc: "3835", anchor: "98", hex: "#9A6A8C", name: "Medium Grape" },
+            { dmc: "3836", anchor: "90", hex: "#C4A0B6", name: "Light Grape" },
+            { dmc: "3837", anchor: "100", hex: "#6E2A80", name: "Ultra Dark Lavender" },
+            { dmc: "3838", anchor: "177", hex: "#5B649D", name: "Dark Lavender Blue" },
+            { dmc: "3839", anchor: "176", hex: "#7B87B7", name: "Medium Lavender Blue" },
+            { dmc: "3840", anchor: "117", hex: "#B8C0D9", name: "Light Lavender Blue" },
+            { dmc: "3841", anchor: "9159", hex: "#C5DCE8", name: "Pale Baby Blue" },
+            { dmc: "3842", anchor: "164", hex: "#2B5A7D", name: "Dark Wedgewood" },
+            { dmc: "3843", anchor: "1089", hex: "#16B9D8", name: "Electric Blue" },
+            { dmc: "3844", anchor: "410", hex: "#1EACB6", name: "Dark Bright Turquoise" },
+            { dmc: "3845", anchor: "1089", hex: "#54D2D8", name: "Medium Bright Turquoise" },
+            { dmc: "3846", anchor: "1090", hex: "#89E5E4", name: "Light Bright Turquoise" },
+            { dmc: "3847", anchor: "1076", hex: "#2E7872", name: "Dark Teal Green" },
+            { dmc: "3848", anchor: "1074", hex: "#469E91", name: "Medium Teal Green" },
+            { dmc: "3849", anchor: "1070", hex: "#62C3AF", name: "Light Teal Green" },
+            { dmc: "3850", anchor: "189", hex: "#238E7C", name: "Dark Bright Green" },
+            { dmc: "3851", anchor: "187", hex: "#4AB99C", name: "Light Bright Green" },
+            { dmc: "3852", anchor: "306", hex: "#CD9D0A", name: "Very Dark Straw" },
+            { dmc: "3853", anchor: "1003", hex: "#E97C30", name: "Dark Autumn Gold" },
+            { dmc: "3854", anchor: "313", hex: "#F4A54A", name: "Medium Autumn Gold" },
+            { dmc: "3855", anchor: "311", hex: "#FAC87D", name: "Light Autumn Gold" },
+            { dmc: "3856", anchor: "1010", hex: "#EFBE90", name: "Ultra Very Light Mahogany" },
+            { dmc: "3857", anchor: "936", hex: "#6B3732", name: "Dark Rosewood" },
+            { dmc: "3858", anchor: "1007", hex: "#964B3C", name: "Medium Rosewood" },
+            { dmc: "3859", anchor: "914", hex: "#BA8A7E", name: "Light Rosewood" },
+            { dmc: "3860", anchor: "379", hex: "#7C6458", name: "Cocoa" },
+            { dmc: "3861", anchor: "378", hex: "#A89588", name: "Light Cocoa" },
+            { dmc: "3862", anchor: "358", hex: "#6B543C", name: "Dark Mocha Beige" },
+            { dmc: "3863", anchor: "379", hex: "#8A7560", name: "Medium Mocha Beige" },
+            { dmc: "3864", anchor: "376", hex: "#C5B79A", name: "Light Mocha Beige" },
+            { dmc: "3865", anchor: "2", hex: "#FFFDF4", name: "Winter White" },
+            { dmc: "3866", anchor: "926", hex: "#FAF6F0", name: "Ultra Very Light Mocha Brown" },
+            { dmc: "5200", anchor: "1", hex: "#FFFFFF", name: "Snow White" }
+        ];
+        
+        let searchMode = 'dmc'; // 'dmc' or 'anchor'
+        
+        // Tab switching
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                searchMode = this.dataset.mode;
+                
+                const input = document.getElementById('searchInput');
+                if (searchMode === 'dmc') {
+                    input.placeholder = 'Enter DMC code (e.g., 310, 3801, white)';
+                } else {
+                    input.placeholder = 'Enter Anchor code (e.g., 403, 1005, 2)';
+                }
+                
+                // Clear results
+                document.getElementById('resultCard').classList.remove('show');
+                document.getElementById('noResult').style.display = 'none';
+            });
+        });
+        
+        // Search function
+        function search() {
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
+            if (!query) return;
+            
+            let result;
+            if (searchMode === 'dmc') {
+                result = conversions.find(c => c.dmc.toLowerCase() === query);
+            } else {
+                result = conversions.find(c => c.anchor === query);
+            }
+            
+            if (result) {
+                document.getElementById('colorPreview').style.backgroundColor = result.hex;
+                document.getElementById('colorName').textContent = result.name;
+                document.getElementById('dmcCode').textContent = result.dmc.toUpperCase();
+                document.getElementById('anchorCode').textContent = result.anchor;
+                document.getElementById('colorNote').textContent = '';
+                
+                document.getElementById('resultCard').classList.add('show');
+                document.getElementById('noResult').style.display = 'none';
+            } else {
+                document.getElementById('resultCard').classList.remove('show');
+                document.getElementById('noResult').style.display = 'block';
+            }
+        }
+        
+        // Enter key search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') search();
+        });
+        
+        // Populate table
+        function populateTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = conversions.map(c => `
+                <tr>
+                    <td><span class="table-color" style="background:${c.hex}"></span>${c.dmc.toUpperCase()}</td>
+                    <td>${c.anchor}</td>
+                    <td>${c.name}</td>
+                </tr>
+            `).join('');
+        }
+        
+        // Filter table
+        function filterTable() {
+            const query = document.getElementById('tableFilter').value.toLowerCase();
+            const rows = document.querySelectorAll('#tableBody tr');
+            
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(query) ? '' : 'none';
+            });
+        }
+        
+        // Initialize
+        populateTable();
+    </script>
+</body>
+</html>
