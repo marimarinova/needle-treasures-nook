@@ -1,0 +1,68 @@
+# .github/workflows/update-date.yml
+# Автоматично обновява "Tools updated" датата всяка седмица (понеделник 00:00 UTC)
+
+name: Update Weekly Date
+
+on:
+  schedule:
+    # Всеки понеделник в 00:00 UTC
+    - cron: '0 0 * * 1'
+  # Позволява ръчно стартиране от GitHub UI
+  workflow_dispatch:
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Update date in HTML files
+        run: |
+          # Форматирай датата като "January 13, 2026"
+          NEW_DATE=$(date -u +"%B %d, %Y" | sed 's/ 0/ /')
+          
+          echo "Updating date to: $NEW_DATE"
+          
+          # Обнови index.html
+          if [ -f "index.html" ]; then
+            sed -i "s/<noscript>[A-Za-z]* [0-9]*, [0-9]*<\/noscript>/<noscript>$NEW_DATE<\/noscript>/g" index.html
+            echo "Updated index.html"
+          fi
+          
+          # Обнови dmc-anchor-conversion.html (ако има noscript)
+          if [ -f "dmc-anchor-conversion.html" ]; then
+            sed -i "s/<noscript>[A-Za-z]* [0-9]*, [0-9]*<\/noscript>/<noscript>$NEW_DATE<\/noscript>/g" dmc-anchor-conversion.html
+            echo "Updated dmc-anchor-conversion.html"
+          fi
+          
+          # Обнови meta тага article:modified_time
+          ISO_DATE=$(date -u +"%Y-%m-%dT00:00:00Z")
+          
+          for file in *.html; do
+            if [ -f "$file" ]; then
+              # Ако файлът има article:modified_time, обнови го
+              if grep -q "article:modified_time" "$file"; then
+                sed -i "s/content=\"[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}T[0-9:]*Z*\"/content=\"$ISO_DATE\"/g" "$file"
+                echo "Updated meta tag in $file"
+              fi
+            fi
+          done
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Провери дали има промени
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git add -A
+            git commit -m "🔄 Auto-update: Tools updated date [$(date -u +%Y-%m-%d)]"
+            git push
+            echo "Changes committed and pushed"
+          fi
