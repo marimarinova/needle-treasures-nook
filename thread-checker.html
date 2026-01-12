@@ -3161,16 +3161,7 @@ function checkForSignInLink() {
             document.getElementById('syncModal').style.display = 'none';
         }
 
-        async function signInWithGoogle() {
-            const provider = new firebase.auth.GoogleAuthProvider();
-            try {
-                await auth.signInWithPopup(provider);
-                showToast('Signed in successfully!');
-            } catch (error) {
-                console.error('Sign in error:', error);
-                showToast('Sign in failed. Please try again.');
-            }
-        }
+       
 
         async function signOutUser() {
             try {
