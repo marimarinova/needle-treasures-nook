@@ -1383,6 +1383,30 @@
             opacity: 0.8;
         }
         .close-btn:hover { opacity: 1; }
+        /* Email Sign-In Styles */
+.signin-divider {
+    display: flex; align-items: center; margin: 1.25rem 0;
+    color: #999; font-size: 0.8rem;
+}
+.signin-divider::before, .signin-divider::after {
+    content: ''; flex: 1; height: 1px; background: #ddd;
+}
+.signin-divider span { padding: 0 0.75rem; }
+.email-signin { text-align: center; }
+.email-signin-label { font-size: 0.85rem; color: var(--text-medium); margin-bottom: 0.5rem; }
+.email-signin-form { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; }
+.email-input { flex: 1; padding: 0.65rem 0.85rem; border: 1px solid #ddd; border-radius: 8px; font-size: 0.9rem; }
+.email-input:focus { outline: none; border-color: var(--terracotta); }
+.email-signin-btn { padding: 0.65rem 1rem; background: var(--terracotta); color: white; border: none; border-radius: 8px; font-size: 0.85rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.email-signin-btn:hover { background: var(--terracotta-dark); }
+.email-signin-btn:disabled { background: #ccc; cursor: not-allowed; }
+.email-signin-hint { font-size: 0.7rem; color: var(--text-light); margin: 0; }
+.email-sent-message { background: rgba(139, 157, 131, 0.15); padding: 1rem; border-radius: 10px; text-align: center; }
+.email-sent-message .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+.email-sent-message h3 { color: var(--sage-dark); font-size: 1rem; margin-bottom: 0.25rem; }
+.email-sent-message p { font-size: 0.8rem; color: var(--text-medium); margin: 0; }
+.email-sent-message .resend-link { display: inline-block; margin-top: 0.75rem; color: var(--terracotta); font-size: 0.75rem; cursor: pointer; text-decoration: underline; }
+
     </style>
 </head>
 <body>
@@ -1567,19 +1591,32 @@
             <button class="close-modal" onclick="closeSyncModal()">&times;</button>
             <h2>Cloud Sync</h2>
             
-            <div id="syncLoggedOut">
-                <p>Sync your thread collection across all your devices. Sign in with Google to enable cloud backup.</p>
-                <button class="google-signin-btn" onclick="signInWithGoogle()">
-                    <svg viewBox="0 0 24 24" width="20" height="20">
-                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
-                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-                    </svg>
-                    Sign in with Google
-                </button>
-                <p class="sync-note">Your data stays private and secure</p>
-            </div>
+           <div id="syncLoggedOut">
+    <p>Sync your thread collection across all your devices. Choose how to sign in:</p>
+    
+    <button class="google-signin-btn" onclick="signInWithGoogle()">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+        </svg>
+        Continue with Google
+    </button>
+    
+    <div class="signin-divider"><span>or</span></div>
+    
+    <div class="email-signin">
+        <p class="email-signin-label">Sign in with any email:</p>
+        <div class="email-signin-form">
+            <input type="email" id="emailSignInInput" placeholder="your@email.com" class="email-input">
+            <button onclick="sendMagicLink()" class="email-signin-btn">Send Link</button>
+        </div>
+        <p class="email-signin-hint">We'll send you a magic link - no password needed!</p>
+    </div>
+    
+    <p class="sync-note">Your data stays private and secure</p>
+</div>
             
             <div id="syncLoggedIn" style="display:none;">
                 <div class="user-info">
@@ -3053,6 +3090,68 @@
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
         const db = firebase.firestore();
+        // Email Magic Link Settings
+const actionCodeSettings = {
+    url: 'https://needletreasuresnook.com/thread-checker.html',
+    handleCodeInApp: true
+};
+
+// Email Magic Link Function
+async function sendMagicLink() {
+    const emailInput = document.getElementById('emailSignInInput');
+    const email = emailInput.value.trim();
+    
+    if (!email || !email.includes('@')) {
+        showToast('Please enter a valid email');
+        return;
+    }
+    
+    const btn = document.querySelector('.email-signin-btn');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    
+    try {
+        await auth.sendSignInLinkToEmail(email, actionCodeSettings);
+        localStorage.setItem('emailForSignIn', email);
+        
+        document.getElementById('syncLoggedOut').innerHTML = 
+            '<div class="email-sent-message">' +
+            '<div class="icon">✉️</div>' +
+            '<h3>Check your email!</h3>' +
+            '<p>We sent a sign-in link to<br><strong>' + email + '</strong></p>' +
+            '<span class="resend-link" onclick="location.reload()">Use a different email</span>' +
+            '</div>';
+        
+    } catch (error) {
+        console.error('Error sending email link:', error);
+        btn.disabled = false;
+        btn.textContent = 'Send Link';
+        showToast('Error sending email. Try again.');
+    }
+}
+
+// Check for Magic Link on page load
+function checkForSignInLink() {
+    if (auth.isSignInWithEmailLink(window.location.href)) {
+        let email = localStorage.getItem('emailForSignIn');
+        if (!email) {
+            email = window.prompt('Please enter your email to confirm sign-in:');
+        }
+        if (email) {
+            auth.signInWithEmailLink(email, window.location.href)
+                .then((result) => {
+                    localStorage.removeItem('emailForSignIn');
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                    showToast('Signed in successfully!');
+                })
+                .catch((error) => {
+                    console.error('Error signing in:', error);
+                    showToast('Sign-in failed. Please try again.');
+                });
+        }
+    }
+}
+
 
         function openSyncModal() {
             document.getElementById('syncModal').style.display = 'flex';
@@ -3172,6 +3271,8 @@
             updateSyncUI(user);
             if (user) loadFromCloud(user);
         });
+        // Check for magic link on page load
+checkForSignInLink();
 
         let cloudSyncTimeout;
         const originalSaveCollection = saveCollection;
