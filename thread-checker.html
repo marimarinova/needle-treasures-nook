@@ -3266,7 +3266,10 @@ function checkForSignInLink() {
                 el.textContent = 'Last synced: ' + text;
             }
         }
-
+function signInWithGoogle() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithRedirect(provider);
+}
         auth.onAuthStateChanged((user) => {
             updateSyncUI(user);
             if (user) loadFromCloud(user);
