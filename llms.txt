@@ -1,7 +1,9 @@
 # Needle Treasures Nook
+
 > Free cross stitch tools and resources from an Etsy Star Seller with 17,000+ sales
 
 ## About
+
 Needle Treasures Nook provides free, professional-grade tools for cross stitch enthusiasts. Created by Marieta, a primitive cross stitch pattern designer who understands stitchers' needs firsthand.
 
 ## Tools
@@ -17,6 +19,11 @@ Needle Treasures Nook provides free, professional-grade tools for cross stitch e
 - Purpose: Calculate exact fabric dimensions for any cross stitch pattern
 - Features: Supports 11ct to 40ct fabric, customizable margins, instant results
 - Input: Pattern dimensions (stitches), fabric count, desired margins
+
+### DMC to Anchor Conversion
+- URL: /dmc-anchor-conversion.html
+- Purpose: Convert between DMC and Anchor thread numbers
+- Data: Complete conversion chart for both brands
 
 ### Classic Colorworks to DMC Converter
 - URL: /classic-colorworks-to-dmc.html
@@ -50,7 +57,24 @@ Needle Treasures Nook provides free, professional-grade tools for cross stitch e
 - URL: /primitive-cross-stitch-guide.html
 - Content: Guide to primitive style stitching including hand-dyed fabrics, muted palettes, and rustic finishes
 
+### Aida vs Linen vs Evenweave: Choosing Cross Stitch Fabric
+- URL: /aida-vs-linen-vs-evenweave.html
+- Content: Comprehensive comparison of cross stitch fabrics with pros, cons, and recommendations for different skill levels
+
+### How to Calculate Fabric Size for Cross Stitch
+- URL: /calculate-fabric-size.html
+- Content: Step-by-step guide to calculating exact fabric dimensions with formulas and examples
+
+### How to Dye Cross Stitch Linen Botanically
+- URL: /botanical-linen-dyeing.html
+- Content: Natural plant dyeing guide using avocado, onion skins, hibiscus, rosemary and more for unique hand-dyed fabric
+
+### 10 Common Cross Stitch Mistakes and How to Fix Them
+- URL: /cross-stitch-mistakes.html
+- Content: Practical solutions for miscounting, wrong colors, tangled threads, fabric fraying, and other common problems
+
 ## Technical Notes
+
 - All tools work offline after initial load
 - Data saved locally in browser (localStorage)
 - No account required
@@ -58,6 +82,7 @@ Needle Treasures Nook provides free, professional-grade tools for cross stitch e
 - Free to use, no ads
 
 ## Related
+
 - Etsy Shop: https://www.etsy.com/shop/NeedleTreasuresNook
 - Instagram: @needletreasuresnook
 - Pattern style: Modern primitive, nature-inspired, folklore themes
