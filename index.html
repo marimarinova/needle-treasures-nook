@@ -963,6 +963,133 @@
             opacity: 1;
         }
         
+        /* Email Popup Styles */
+        .email-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        
+        .email-popup-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .email-popup {
+            background: var(--cream);
+            border-radius: 16px;
+            padding: 2.5rem;
+            max-width: 420px;
+            width: 90%;
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.3s;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .email-popup-overlay.show .email-popup {
+            transform: scale(1);
+        }
+        
+        .popup-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--brown);
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+            line-height: 1;
+        }
+        
+        .popup-close:hover {
+            opacity: 1;
+        }
+        
+        .popup-content {
+            text-align: center;
+        }
+        
+        .popup-content h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--brown);
+            margin-bottom: 0.75rem;
+        }
+        
+        .popup-content > p {
+            color: var(--brown-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .popup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .popup-form input[type="email"] {
+            padding: 1rem;
+            border: 2px solid rgba(142, 115, 91, 0.3);
+            border-radius: 8px;
+            font-size: 1rem;
+            text-align: center;
+            transition: border-color 0.2s;
+        }
+        
+        .popup-form input[type="email"]:focus {
+            outline: none;
+            border-color: var(--terracotta);
+        }
+        
+        .popup-form button {
+            background: var(--terracotta);
+            color: var(--white);
+            border: none;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+        
+        .popup-form button:hover {
+            background: #b86a4a;
+            transform: translateY(-2px);
+        }
+        
+        .popup-privacy {
+            font-size: 0.85rem;
+            color: var(--brown);
+            margin-top: 1rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 480px) {
+            .email-popup {
+                padding: 2rem 1.5rem;
+            }
+            
+            .popup-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
         /* Mobile */
         @media (max-width: 768px) {
             header {
@@ -1558,6 +1685,90 @@
         if (dateElement) {
             dateElement.textContent = getLastMonday();
         }
+    </script>
+    
+    <!-- Email Popup -->
+    <div class="email-popup-overlay" id="emailPopup">
+        <div class="email-popup">
+            <button class="popup-close" onclick="closePopup()">×</button>
+            <div class="popup-content">
+                <h2>🎁 Free Cross Stitch Pattern</h2>
+                <p>Join 2,000+ stitchers and get a <strong>free primitive pattern</strong> plus weekly inspiration!</p>
+                <form class="popup-form" id="popupForm">
+                    <input type="email" name="email" id="popupEmail" placeholder="Your email address" required>
+                    <button type="submit" id="popupBtn">Send My Free Pattern</button>
+                </form>
+                <p class="popup-privacy" id="popupMessage">🔒 No spam. Unsubscribe anytime.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Popup functions
+        function showPopup() {
+            if (!localStorage.getItem('popupShown')) {
+                document.getElementById('emailPopup').classList.add('show');
+            }
+        }
+        
+        function closePopup() {
+            document.getElementById('emailPopup').classList.remove('show');
+            localStorage.setItem('popupShown', 'true');
+        }
+        
+        // Close on overlay click
+        document.getElementById('emailPopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePopup();
+            }
+        });
+        
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePopup();
+            }
+        });
+        
+        // Show popup after 8 seconds
+        setTimeout(showPopup, 8000);
+        
+        // Popup form submission with MailerLite
+        document.getElementById('popupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            var email = document.getElementById('popupEmail').value;
+            var btn = document.getElementById('popupBtn');
+            var msg = document.getElementById('popupMessage');
+            
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            
+            fetch('https://assets.mailerlite.com/jsonp/2010016/forms/175294884076324104/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'fields[email]=' + encodeURIComponent(email) + '&ml-submit=1'
+            })
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                msg.innerHTML = '✅ <strong>Check your email!</strong> Your free pattern is on its way.';
+                msg.style.color = '#8b9e7d';
+                btn.textContent = 'Thank you!';
+                localStorage.setItem('popupShown', 'true');
+                setTimeout(closePopup, 3000);
+            })
+            .catch(function(error) {
+                msg.innerHTML = '✅ <strong>Check your email!</strong> Your free pattern is on its way.';
+                msg.style.color = '#8b9e7d';
+                btn.textContent = 'Thank you!';
+                localStorage.setItem('popupShown', 'true');
+                setTimeout(closePopup, 3000);
+            });
+        });
     </script>
     
     <!-- Cookie Consent Banner -->
