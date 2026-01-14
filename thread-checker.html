@@ -3259,7 +3259,7 @@ function checkForSignInLink() {
         }
 function signInWithGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithRedirect(provider);
+    auth.signInWithPopup(provider).then(() => { showToast("Signed in successfully!"); }).catch(err => { console.error(err); showToast("Sign in failed"); });
 }
         auth.onAuthStateChanged((user) => {
             updateSyncUI(user);
